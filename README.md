@@ -2,7 +2,11 @@
 # changes
 
 <h3>note:</h3>
-paste this file to the flocard directory to load the deppendencies.
+
+* paste this file to the flocard directory to load the dependencies.
+* row grouping doesn't remove the existing table heading (thead) for the corresponding table data (td).
+* I used hardcoded data here in the table since I did not have access to the database.
+
 <h3>Added row grouping to the table data</h3>
 
 copy the below code to the head section
