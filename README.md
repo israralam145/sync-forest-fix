@@ -1,5 +1,8 @@
 # sync-forest-fix
 # changes
+
+<h3>note:</h3>
+paste this file to the flocard directory to load the deppendencies.
 <h3>Added row grouping to the table data</h3>
 
 copy the below code to the head section
