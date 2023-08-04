@@ -81,6 +81,6 @@ here is the script
 
 * dark mode fixed by changing the background colors in assets/theme.dark.min.css file. The main issue with the color value which light and not suitable with the dark theme.
 
-* change the background-color of .table-striped (line:2157) and .table.hover (line:2161) with a dark color.
+  change the background-color of .table-striped (line:2157) and .table.hover (line:2161) with a dark color.
 
-* table heading appearing white fixed by removing thead-light class (line: 676)
+* table heading appearing white fixed by removing thead-light class (line: 676) in the html file.
