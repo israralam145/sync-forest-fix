@@ -1,0 +1,1920 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags Always Come First -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title -->
+    <title>Sync Forest - Flocard</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+    <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" href="/assets/vendor/icon-set/style.css">
+    <link rel="stylesheet" href="/assets/vendor/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" href="/assets/vendor/chart.js/dist/Chart.min.css">
+    <link rel="stylesheet" href="/assets/vendor/daterangepicker/daterangepicker.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="/lib/plugins/fontawesome-free/css/all.min.css">
+
+    <!-- CSS Front Template -->
+    <link id="styleThemes" rel="stylesheet" href="/assets/css/theme.min.css" as="style">
+    <link rel="preload" href="/assets/css/theme.dark.min.css" as="style">
+    <link rel="stylesheet" href="/css/site.css">
+    <script src="/assets/vendor/jquery/dist/jquery.min.js"></script>
+
+    <!-- row grouping datatable -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.css" />
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script type="text/javascript" language="javascript"
+        src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.js"></script>
+
+    <!-- Datatable css -->
+    <style>
+        tr.group,
+        tr.group:hover {
+            background-color: #dddddd4b !important;
+        }
+    </style>
+
+    <!-- Datatable CSS -->
+    <link rel="stylesheet" href="/assets/vendor/datatables.net.extensions/fixedColumns.dataTables.min.css">
+    <!-- End Datatable CSS -->
+    <link rel="manifest" href="/manifest.json" />
+    <!-- Google Maps API-->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYDB0HhR2EfwkdKoaOCM6t8gy4LixdKJQ&map_ids=(None,)&language=en&region=US&libraries=drawing"
+        type="text/javascript"></script>
+
+    <!--  -->
+    <link rel="stylesheet" href="/assets/FlocardIcons/plantersIcons.css" />
+</head>
+
+<body class="has-navbar-vertical-aside navbar-vertical-aside-show-xl footer-offset" data-offset="0"
+    data-hs-scrollspy-options='{ "target": "#navbarSettings" }'>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5SMLNXD" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <script src="/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside-mini-cache.js"></script>
+
+    <!-- ========== HEADER ========== -->
+
+    <header id="header"
+        class="navbar navbar-expand-lg navbar-fixed navbar-height navbar-flush navbar-container navbar-bordered">
+        <div class="navbar-nav-wrap">
+            <div class="navbar-brand-wrapper">
+                <!-- Logo -->
+                <a class="navbar-brand" aria-label="Flocard" href="/User">
+                    <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo">
+                    <img class="navbar-brand-logo-mini" src="/assets/svg/logos/logo-short.svg" alt="Logo">
+                </a>
+                <!-- End Logo -->
+            </div>
+
+            <div class="navbar-nav-wrap-content-left">
+                <!-- Navbar Vertical Toggle -->
+                <button type="button" class="js-navbar-vertical-aside-toggle-invoker close mr-3">
+                    <i class="tio-first-page navbar-vertical-aside-toggle-short-align" data-toggle="tooltip"
+                        data-placement="right" title="Collapse"></i>
+                    <i class="tio-last-page navbar-vertical-aside-toggle-full-align"
+                        data-template='<div class="tooltip d-none d-sm-block" role="tooltip"><div class="arrow"></div><div class="tooltip-inner"></div></div>'
+                        data-toggle="tooltip" data-placement="right" title="Expand"></i>
+                </button>
+
+            </div>
+
+            <!-- Secondary Content -->
+            <div class="navbar-nav-wrap-content-right">
+                <!-- Navbar -->
+                <ul class="navbar-nav align-items-center flex-row">
+                    <li class="nav-item d-md-none">
+                        <!-- Search Trigger -->
+                        <div class="hs-unfold">
+                            <a class="js-hs-unfold-invoker btn btn-icon btn-ghost-secondary rounded-circle"
+                                href="javascript:;" data-hs-unfold-options='{
+                                   "target": "#searchDropdown",
+                                   "type": "css-animation",
+                                   "animationIn": "fadeIn",
+                                   "hasOverlay": "rgba(46, 52, 81, 0.1)",
+                                   "closeBreakpoint": "md"
+                                 }'>
+                                <i class="tio-search"></i>
+                            </a>
+                        </div>
+                        <!-- End Search Trigger -->
+                    </li>
+
+                    <li class="nav-item">
+                        <!-- Account -->
+                        <div class="hs-unfold">
+                            <a class="js-hs-unfold-invoker navbar-dropdown-account-wrapper" href="javascript:;"
+                                data-hs-unfold-options='{
+                       "target": "#accountNavbarDropdown",
+                       "type": "css-animation"
+                     }'>
+                                <div class="avatar avatar-sm avatar-circle">
+                                    <img class="avatar-img"
+                                        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCADIAMgDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAAMEBQYHAgEI/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAIBAwQFBv/aAAwDAQACEAMQAAAB&#x2B;qQAEF4Z1U7oqvRxXYpvJFz8pgTc&#x2B;qUJN1KWpE3AqHkNbyl8NF2KRyReH2aXii2ZAy6AAAACFmoOyuljbntc1z6y9ZX3rEUkuWPqu&#x2B;7YqxLz1r6C3IpMCLngEbpUrHj0WEDn7QAAACAn6/YmddIqdfm&#x2B;8yUjS9d9tHAV9SzQMTwrU8umd&#x2B;7xySmNT8jXttbtw3rSzB69gX0HytljAr0AAAAENMsJWhyKzErdcISdbMHvdcklfki/Y5YMY&#x2B;yQUtGqTScTaPqv4S23Zl3mqPfKCL23G9mptnwIuAAAAI2SiYKa557pgTSjq3ks1v8A1E/Eiu4UzTGwizbm9VaNcxizgKlvnOrytYF2bZkNlw3cEewAO4AAABES8XBWee0K1Yt5JnU6Mm37Rn2EbhkK34RetPlE15bmH0rHxOP7VFSOvBY49/H344/ack1xHsYFjAAAADB/GkQHCC6ooi4jpHnMR00TmQaZlldsgyzyT5vZcXDNGTRIbf8ANH1Z0eRXk25NPmtZVqqtYQHcAAAAjZKHIhFYVw9KEDLV6l/fWb1JR8ce7qMTl69k2HpbnR6Qos7To0baupzKZW31FyNtOxYRuC22oCXAAAAK9Ya5EUKQh3r1yb6L7geRvLTfnbRPB0MuLS2c33y3oqwSrmG2uVRQ9T5yWqloFnIfoSm6Lg02YDDsAAAAK7Yq&#x2B;pmKnKdELxkMprptDTxDv87n1/HSfJjU84vTjtuyXfrarmtLM&#x2B;lik2jhBh3o2Y6bj0WADlbwAAACAn4RTM6nas9qVhdKLpvRzNFlm3VxPK1ZKFLfNrhFxyOgXvOdpddriXkP1OfONyHWbDp2W6nl0WIDl7wAAACn3CpkfKrWCvCRN3akWHZnmu&#x2B;VOvia5JquBVPnLP3nkdF79I/MX0Lsz6NGyUd0ML1ss3qeZ1HLtTzaLEBzdwAAAA0AKwuEHsgExz2Fita6Cyw6BWJwJiVQBlXSAF5YIlyArAAf/8QALhAAAQQBAwMDAgYDAQAAAAAAAwABAgQFBhESExUgFCE1EDQHFiIjMTMXJDJC/9oACAEBAAEFAvqY0AQ7nWXca67gBdwAu4113Kuu4113AC7gBdwAvXgXrwLuNddxrruVddyrrudZCNA8PLLfZxiyZctlyT&#x2B;64Ljst/F/runWJ&#x2B;z8sv8AZs66i6i5rmmIua5Lmua5eHBcVxWL9qnlmPsuS3XJclyW65Lkm9/puuX0bZPNbbonEA8Ef1FDyzf2HJcvFlsm&#x2B;rRTvsmdMt2i2XyfqT6b9sX5Zz7BMKbodCcmHAY09WElGnBk1UQomIAMb2qcdXDLWNqRa/4gQ4h1zGUqeRr5ISgyyt7dQF1LOAbbHeWWh1KcKKaDsoxkzyGhc3lu8Wsz2r6m1Ia3d9Q7ALbd267so2pwWAzc6eRHOJY5C36YAR8mDD9/BfH&#x2B;V3&#x2B;iUtk9iTuMjkmyabMs/ehWxtXWErlWzWia7LDHyET4C&#x2B;CQdLXyNawFypAR3jLRuqChbJSeUht7VW3PhPsPK&#x2B;&#x2B;1cm8p7NFceKc2z9blLX1AlzDsd2Fi4zymRrVx1g9KPKTRZrI4kHqTHejs6bE9m/Zhykz7Qpf2YX7Hyyb7VYw5NxRZOik3cC6nUWX0BXsW9I4eVXJuccIwshLK1aBXG2ao2VrELTB&#x2B;H2Fk8j/w0n6OLLIxcE&#x2B;9Dyyn2g48YOyKnCgN&#x2B;8OMd4QiyyTi3vAOeWl6ZiF1QOcJei6Uq9aBcbpRowwBfYRH/wBag3Aun/jvLJNvV39nd1MXJcJbx/bcb7TsOx62HDEcbGHrWVSqiAsmCJDdhqLKBDXx2kKnp8Za/wCIjcdWpHZ8B8f5Xf6NlwZcV0N5Sr7pqe79visnBqGoBleSu5GeOL&#x2B;Yi2rrmcY9RX5PVCFq1Y7s8SDeQqUv28F8f5X32rc91DdbtFHvdJNlouo5aCfKw31zKXHuNvLh7Ucyt4Yu9YlrFNhivndSGixI3JdFvUN0qzNMWC&#x2B;P8shHlWgOME&#x2B;0UcyLP3bhJRmPmWxxIaQ7VarX/LF/JmK8ahjRHn82zPoPE9JPaIKV/IEtQs25xHirPUq4D4/yysmjTjaGurCTWCw4k/SpPtCjDaHpY2zeljTWoBTzhZXSxMbKGMsdX9RZ0r7Y6xRhcWXo2ar3Z2GWHvDt1dNPvi/LO7dvDIUE9kWwjhTQFNSxwiolXZNkAiJcN/rUrPQ1DextS9HsdeD9Li&#x2B;OqeipzfhFi/tXtMBuxJgLmCPoyxG1gvLP/HMKO0ZwCmsj2PbHXEPITOCVhSixHk3NZA7h1DG9WtiPar1h6XtVrF4FgBY2iLkpE/T63ktPDiPHeWe&#x2B;Oizb8uCYqtk67uTZO6su4gy9oWi9e/YZpvx99K4wF/T1PHQZVXkaH/Tkh1iRWE&#x2B;w8s58fxdTkw4nyzLE8yk3aLbvNEg05Wp/tVm5E/kIxcR6DsRPgo/oFX26kn2eP8bclg/sPLN/YcVnZ7xFVCKeMZ2oS3jAPu&#x2B;/vmJ9PGAb3GOTKxYaYdA5RqJSPwFUfeG6GT9PJ1gPjvLMfZHNxjZFVHKBxknAXTpct4CbiotstVn6WDr/AMWDdEZ48K34dY/jVNPkPFz/ANOT/pqmkaqOHtgfjvLVcXlhzZck3x853rhtt&#x2B;v1gC/pfaU5T2lrixthQDbi79U&#x2B;QluXSE2jpv8A8UP01&#x2B;eyp0uENpLT/wAd5ao&#x2B;I1LWmSzgjEq4mRZO2JBPoijxYUOLHlstb2ORCn5oH9lmXI2hC9bCy9o0iRmisoWSSeE3eOB&#x2B;P8rVQV0M9IYgibS2LZvyvjF2anwbCU2XaKilp7HyVz8PcBfL/i/TKb8MNMxX&#x2B;MdNb4/RmHxUewUEPTONFJ9P0JKGm8cN&#x2B;xUWVeuOqP6//8QAJREAAgECBgICAwAAAAAAAAAAAAECAxEQEhMgITEyUSJBBDBh/9oACAEDAQE/ASTsrmvI15GvI1pGtI1ma0jWkU6jk7PZPxf6aPlsn4vBU2zTZps02ZHglcp8bHyiMPQ&#x2B;Dl4ZW&#x2B;TTfonTuQjYj3tuJFiEbysxWLpFZZZcERbbCwpxuyFPLK5OnmZXgkiItjwuZ2U6lpJsUs3iZpRfyK888hC2MuLBysU6soQVyVZz&#x2B;KJzSm0IW2ywnV&#x2B;kX5Px5RcMsirKFNXQ3cTcSjPM7PdOVlxsqt5eMaHltZV6wXMj7J2UORd4UfLY8KkeL4U&#x2B;Zn9Ky&#x2B;Ajso&#x2B;W/JH0KKXSwaT7MkfRkj6FFLrH/8QAJREAAgECBQUBAQEAAAAAAAAAAAECAxEEEiAhMRATFEFRMiIj/9oACAECAQE/ASCzSSPFh9PFgeLD6eNE8eI8PE8eJ48SrSUI3Win&#x2B;0XL68Q1a2in&#x2B;0XsSrwid&#x2B;B3ondidyPSUsquVG5Su9CdncqVb8kbSFZCW45pbHcRCoo8lapmkXvofBb2SYn7JVP5uhtm7KLzR3Ji0MbJbHA3sSqZo2IVMqsUZ5mTFqy3O2idJZXYUPo6a9FGnliSFpysn8EQpymVKUXN2FTUf6YqLlBSXJJPTe25nk&#x2B;RtFLDJrNItZWRiYSU8yKUZ1JWLWQ4KfJXoqCzR0PgTKMHKST68ooRWfca6Yr8aHwKPswyvK/Se0Da1ynmdRWJdMT&#x2B;NNzDytKx6K21NjfpGGf&#x2B;rJHBiH/GpbcHcn9HKT5fRNrg7k/pnl9HJvnr/8QAQhAAAQMBAwkEBgYJBQAAAAAAAQACEQMSITEEEBMgQVFhcaEiMjORQnKiscHRBSNAYoHSFBUkNENSkqPwNXOCsuH/2gAIAQEABj8Cz2nmGrxOhXidCu/0K7/QrxOhXidCvE6Fd/oV3&#x2B;hXf6Fd/oV3&#x2B;hXidCvE6FeJ0K8ToV4nQq0wy3XPMfYhzOueY&#x2B;xDnrnmPsJe83BB/wB467uY&#x2B;wTgEyk3w580z1jru5jNcFfcrJGa&#x2B;9FxCNWtUFGnxT9G8vrD0CFaDyGj&#x2B;lDSUzUP3blLqEU&#x2B;BvVuhVDxw2ZzRp/iUzc0pvM65HEK9RsWKmJUbEScEXE9kXqpFSKbSdGAryZdeSrAwUAwTirnk81RrWobg/iEHNNppwIUDvFS5CN6bzOuc12pVNsNuxKFKpThtk9rhgrZ7ovhfs1OYUOoH8FJp2OaLnU5aNyE3JuS1TLHPhh3IclwjM3mdc81AUQt2aFpKMk0TacBuXeVHJ5hpMnkgxjQBwWGYiFbHccsmpNmdICPjmKkpvM655qVxGe1KLUH5N9RRv0kb&#x2B;Cyo1LzRJZK7T2&#x2B;aIY8EhB1V8BWGV2WtxTaghzWnYv1jUbZpwRS48U8onC5OcShzOueYV&#x2B;a5YojFG5OtQGjFfSbqJ7ByjFvIJjmtrwcDuVp5dukqzFpoRt5M87bbVlLg5zmaMmHLI2NcHHRiY2TenIwngBN9Y6556uGKlVGYWmlqr03C9tSD/SF22INptsgLttkKbHVVw1oDdGfcmPP8TtdEeJRlPPFD1jrnX7yyiiLhVDarfcfcoTO3RbS22j2kKQdRDDdDjeon8UaTe/VNgBU6bRAa2EJ3rsn8E6bjKbzOuc96uXauV6FkOKyf6RosM0Ln8imfobhTv7V6tVKeTudGDjPvVoUsmB3KsK7rVGJjGFkjH9wPteV67BTbW9YppIQ5nXI45plXZr1ZayVGCfSqdpjxZIWgrn6qtfScv2fKAHKcoqCRtRoU4fOJWU1Xj68AAcJzQYBasVTDhZdG1D1jrkuMCRnhqdcVgtI7ErBF7qluNiyyyZq0rJHW73K8lpGKvcVafeMStJ/O4n4fBSH2Hcl22Q3Y4bUA0thNs4tEEJvrHXdOEhXMjiVsVzb&#x2B;S7onMRNloVWlTkVGd&#x2B;0if5sAsuoTjHmAnOdRbbOLhiu5dxK0VBt5uAVGg3BjQJQRtCRuKtU4oOPktPk5/SKPpAKnUbgXO9&#x2B;u71gu9B3K9trisPJGoZgCU1xFi1szFztrvNAnfgssrNvLKxuQNOuxjj6LjBCJq5VTJ3MMlPrHsZPk/8AEqbXHBHR1G1CNxTROJW5STDQop07XEoWWhsuJu13cwr0VcAhQtd43jggApOxSM2WVR6VRzuqDt4VydSeCbVaXRwVrB0zITarxDtnzXBQe433q7shDbedd3MZi5ysUzDlVqPGAxRd0QQGwBcEfvBcQUXlMYB26T3NPnPxToQYO60Rm5mVeZ4JvM67uYzU6QrilJvRLalurvRccXOURM3yhwX4LKnYRTceiB4I3TwUAWVldJ9qy8Nddzj49EeSnMOS&#x2B;CbzOueYRDcd6NSq&#x2B;29CxSsqg3hKBT32bMnZtRm&#x2B;Flp3iz5oINHfcqQ2m9ZRlT23PcA2Ru/zonckCd6PJU6lzQ/0liYTeZ13w6ybQvT2VXEWDEzihZpnRN2kYrDyTYubCaPRQAx9yM70RhpKwH&#x2B;eStPMNU7E1u4LI43O/wCxRTm7nKE10XAQ0ZmzvOvU5hGpTdZ2QNqpU6jO2rrlUk3G8SvVzFvNZJQ2NDqh8/8AxQLmoJyDD/BeW/H4ojeqgGIcWlBQ24KSm8zrmlWbbYdkrtZGD/zd81&#x2B;6&#x2B;275r929t3zQZoYaOJXg&#x2B;0V4XtFX0Pbd81pK&#x2B;QaR8ROmqfmX&#x2B;mf36n5ld9G/36n5lP6tv/36n5k9uS5Jog&#x2B;8/WvPvK8D2inOZk0Fxk9t3zV9D2iiW5Pj993zXg&#x2B;0VYptst3an//EACgQAQACAgEDAwUBAQEBAAAAAAEAESExQVFh8CBxsRCBkaHRweEw8f/aAAgBAQABPyH6qq9i6uD&#x2B;b4g3i&#x2B;IL5vief&#x2B;US8XxPF/KDeL4nj/lPH/CeP&#x2B;U8/wDKef8AhKPF8Tyfyni/lPF/KJeb4hK/Yuq9Yv6IAjCFLlZLGPqBtgSriQZ&#x2B;lxjL/wAeMo5iyZfQTS7mcrcKMGwcEdxriUy1RylYKPd63XmZhDeVIGZfSTaOCyD&#x2B;gbjG5gognFUSWKaGv2v1uvCzLQi7mekzB&#x2B;gtDUMymNv6Cx3Ku4orBtiuaFYNI8X1&#x2B;K6xJvWmXBkC1F5WZwKj2ymHBXMIpOuvtFMxwgz36TYOCoA&#x2B;0zxPP&#x2B;Sy2vqC/hCvMws&#x2B;4nMZmaMcU1V5MA55PrU/wZzfjAKmGplH2QbVZ1hSli5ADlhckh7S1DWli6H/AGUNrNHbAWnl7wGq2FzL9QFAs7Q&#x2B;E37/APIY8NosSWWlx2l9mXOYAHcnmuvrw9wgm1jCtkr94Nwc3Oyxwt5HHP6itapz4UZp1ZkvMKj6b4qWYXvGDqpnloRixmGsamZt166x7XARzUUhhlXO4a8rPrv3ZGFKGDCiu0bLPxj0DqKHc5qPe4uq0zHFXAcS3vCvRAEIqhFUomSVHuKqAY9vvGetcOC/8EZG6olKq6IVWBnmuvrufZCoSo3cNi4mCBTgOJsihmcKFZd8KaIblk8buWYEb/AAwuTtHvHKLqKm2ELlUrBoJ2tPyInEWi4ivbhLRRWDpPB2/wDw5TWzGMxq1tMBylllFajsaX3dE6qGV2EHZ/aWwzkKO/8A&#x2B;wosmfNK3YLLtzMUHXDDF1O2hGEFh&#x2B;gg5NH7md64ZeO1cQaQoMQJdv8A19dE7JbhmKaYowVEK8d4c53GWfVGj/qCoSgq3cGILYdmo4P0ZBjZ4h0&#x2B;90pX0DR0tFxqoTtQlgrgB7Nsw/sS2TzfX&#x2B;wREyXC0c51AxImyjrCrLYqnuaagohlcTT03vHtAsPt&#x2B;QubSVrixDMAT1alTBj9j6TDsp7p&#x2B;wmO6PJ9dw7kvo3Ldypag6Lj1fcnIL7RFA8wSqy/lz8x4kJYLDhaLTfwlXmqgo/omgH1m3tLiDAcALfESAsYWHTE0kXCCllcPk&#x2B;uyMYTTZZl7Iy1&#x2B;U53MsVTuxAsepE1DGXFQ8jAX9YvfpKQgcGGoi9vhGiQ4NSvkgfuPwR1lEwjAVpWLzBFVbzLFuJyjvy8&#x2B;ttGwPeYec&#x2B;8Gs4iMJe0sVY6JZLSi5b4NI8EcnkHDNaJxWge7zMx965duzHymXMYOx5mxXVvtKCwckFdtZ7EN/U3kMQ0WZ1kY8PLRB5YPIGblf8Af16Kuke81i&#x2B;pcwjb7RZiIsNpGqsgIxoMWFHWldHvFa2cOxLA0V9jc4KaFflHppmFQywNysD8iS6sZD1CVHi6Qu4zfoBl9uIkFRi0/ifEAT6xWjxY0qfvIQmH9kIKN9OEoSTES0Wcq7xFM8xtbsUNxWBgw6Kn5KVAxCilk6PaK6pj9WIAtYXZhYcaf1OcKi1PtEecJiYFpQ1BEImYh2h7RAgpYNFrn1&#x2B;C6ylyjZtUenI61CbslVwNyuHiYLo5yLfeC7sqs4Ui/dyjXcIjAWy0VeqqCi&#x2B;n9jLVv6TDUKuPS4zYuEAMGdOsOzE6tVCFK8p9/Wb8LMS6ReMEcoP3TME0HuYODeGhthwRbqKciIbdDOfae51l2kVIqoxC6fkLL44mZNtKTsJvvMAaqYrl&#x2B;4hfb9jUIEFf29fmusznINu810lE4M7TfCy&#x2B;xBvDQ6T9ilb8kKRmV2yjg&#x2B;yDKbG2MJBnRxN0nySIes5nGHdx3gZ8oLJdu3slsgDxe/rF&#x2B;ZmYwmnZCV3XnLF&#x2B;7ktdEa0qh97mb0VDsWo1yeEtW4M1Fta/jf7EpdCXTwWvQl2b1/5CC1X7lU&#x2B;6RTOLS0i8iW17sfqEBQtW/YIBm3RqVwa/29ZW2pe8A/poQgnW2RTndilEJQpgc0LJ&#x2B;5sSN1qOiz8YllSh6hmMyQ6QeoODtKA0ZOozRDL0QnvZmQ6sTi6uhJZgWBOZ/t6wNmh/3M/f/UlGAb6veMsS9o66wcCCt5cqmwKWFSdUv7f9gKv3guh8vzKodHEN&#x2B;/Lt3qdvze//AEipW3Sa&#x2B;jD2YArvEyUYohJJ5rr67gaFsPiK2z3mpAK&#x2B;g8AMdAP7RJTbf/3gXk&#x2B;ZyrzAHrFNDF3VHdO2iYuliDdPdFfRVOS/dma9vPmd/hBMEVaefMpMO&#x2B;aC5W/nuCay3kvz6P/aAAwDAQACAAMAAAAQ84qnOj/&#x2B;A9C888/Uw9aaU9ZQ8888pa/jiGvme888/wA0cVye26&#x2B;fPPPCcticBkd&#x2B;/PPKKH/2qN07cvPPPOltbrTw6k/PPKA2R7cOwL4fPPOwn5H05UihvPPPu1sllLxkDPPPOrmt9KSMMk/PPKhqLjuioSGPPPIIo3PoPogPfPP/xAAiEQEAAgICAQUBAQAAAAAAAAABABEhMSBBYRBRgZHwobH/2gAIAQMBAT8QjOOp4z98x9s/fM8Z&#x2B;&#x2B;ZdoIN0Q9kngJ4CUI4fzR9Ag9el&#x2B;lwqnquH8kBY9gmeoxKfaeGNjTEdEJgcDYSjMXV3H2JozAtCIl2jZkMQ1wbiNSzcehKSBGCOEsJOkEGeJ2ivUq4QK/qg5Mz1wlnU04tIWG4U1AIugRdEUgYmXNRUTbhgTFwzW4pdQnlggbGVfbOhNxkpeOCWVKtEBuKLGzZhrce8XgXLFsUwxeKNdwmYIbhhxDW6MKiTD4cV1GFZVdw0EbaETOkVwtM/y4aSsXGfFHDMWAgqYs2J7oa&#x2B;PKhKngfUXsD0AoXPG&#x2B;p4H1ErFev/xAAkEQEAAgIABQUBAQAAAAAAAAABABEhMSBBUWGhEHGBkdHB8P/aAAgBAgEBPxCCjpZ33j8nefH5O&#x2B;8fkR5vj8g3N/3xBc2HXfH5O&#x2B;&#x2B;PyWwbvg80hT0XGOJY&#x2B;nOGPPweQSgtYTlmK4KxZxmHVgjSOIdx4QFV0S2D&#x2B;oAoJp3N4iOUHauYzSN2CPAKkwZ7opdRxFuDaDMsDMEUHaPMfBpMtQWtlxSpqMPEjJjDFmb8LS5IjeL84oNo40owyz0mD5wK5m/BS4JcWksMB2MOKMdZY3JHLLg&#x2B;aRzSUkBN8CsXKAMpUvcMYe0DWURHrWGndLAEHKFUbhXRwbopgjc4uLHArHmR1OcZQVCZfLg3Sphl6SXdNRWPZgC6G2ZD&#x2B;TWDi48ffgK5xGie&#x2B;4Zh7Xb7gKap8oMHWXoy4HfhoiVeEA0/tgtI/PovaRim39s7r7YFSX1//8QAKBABAAICAQMEAwEAAwEAAAAAAQARITFBUWFxIIGRobHB8NEQMOHx/9oACAEBAAE/EP8Am5tBXZOsAs0tpNHaDQQEWnODbUgxSNN/wHDPB5CUDFEdz0BgABsol5SIuyN4QfWRnX7pQ3mYBVTkbit/uUKN9ZhoGd6l6rcpLYJrTxBYBcaq1BFkY7mEMsWbKhQH&#x2B;n1qslf7TCqF0SZbYkqEG4mH2Sm8WpogYLmtZdlovwTNsneWMou5ehCchJ1IYhR&#x2B;313OSq85nNiisy1lSU0YX21EOfiJd/MU3VSoN5iczek9pUGMdXeWMa7zyjmCZJavPaIpQg6Ch61cbgN2IqcXGqN9JgnYnmIpFjWY3MI5w3A06yjhLim2PMA5jWadJe6IkYG0dEYXWwdusHQD/oGSMqVehrc7eCXmGzvurgm0OkRUT7BAkIs7/EzPIEx2A7e0oWmJbXSnTDjfFXHbsQEXrk0d7jwJ1pNejH&#x2B;1EyslFBnQtX4lAbCbc8bB8wit6dWIVa4Zt6RCoWKctQwqD1oxrVoFRQDhAw6KVQ6kHdHWnydET4BcB6bOgIUpAY4pmPRdB0UDsvOHU6YFqreVXd&#x2B;MB2vrNZHRbl/kwtAHJOl8EHRTSyiyyvk4cptOQN26YH5wslpGKtzxDpW5lEWyrth&#x2B;NXrMlquH1naf6Y&#x2B;EV0g8XXOJTCM/lMArnRiVIHrLYjVQKbtZotrW5S1JhvCMraFuizLuGsSZ5gKFfHmpVNaC0u5rcue&#x2B;L7Dwx/WnbOpmsNMYDnrFACaGns7wZgA62NBnZPi4z1K14uNnAADriX&#x2B;ACzCIFZfWJwvDXvAmNzecTOkHLcrACmeUZVXqiey7QNLRBt3p3Q29rlGIMOaPZdHvKP7q0vKm4ac4AalvV3IGBRwGono2NyqUihxXIl2M8pRb4WRXIfNUqy1X6h6UDQzSqup6wOC4aPML0GedwQxcD0i3dxXSYyWqGuZhjlHlM9P0tLPiECn57YpXDdXWM4Csk5p0pFCnsMoUHVk/cF7t5g3uCDSrlewltwHkfdxGm6AYoaHrUpmCONhPWgA73b0IQt0VTBNvLM1g0RRkyx2uPPrXSNpfc34ZadJcPI5ZUulzFKgotlYA2rq5S12q5goAnUhlXtGfaSyzoHu&#x2B;Ze9MSMNCGkM3YLNWEeizeYnDft7MFFeQARujPxlhdD444IBu&#x2B;KbbwRV1o6ZEp0/EUjNmbSXeaJNVyeYSe1mi6j3xhDFyj9JKu/WcItt&#x2B;5hrSlTZggpRbuKsA/KEIsKoiaJWoDg3B5s/aWxVvKfoX3LyFlED5pzNbiCiFUIPGiPKLYCD7XUIE1l3H1BPs1t0Qfh9qgShoa95kbZM7tlRYEU4xCfFPHrC7v6YobJRQZiEjXlWgxUcrNdfMgg8zSyvs4wf6IM2EFYcN/FB2AyozyjesQW4lO&#x2B;wGvbPtACNAgiPaNsc6BqQHi4AoZhVFEBThAU1GU0LMpDOZlORAUrPXmKarP7wNQuJQFRQo1xCsB56xpZjjJzDqG9bwjp2eCo&#x2B;2eBbVS1sBAA9klvYsujHEVpQs9&#x2B;VHb0iLqdtJW/3zMVCszAEhjL8R3MmHMrMePl7xxkGtXBdU1Ypg0YXpAILknKwgzQHXrGwo2o94CWv5eIRS1OWI70vPZCVa10G40IQwp9RM9myr7xBQzSOYAjVNCmDkO8FIAeXOeIrDYdFVbjepya6jxa8whDrFjkzzM/wabAEPLS9K7w0E9hVMW6upVIJsYDsqUq01oHCMRL6wRgZmm4DZ1UUl949LTu2pkWerNSyUk5UiuZwTlh3TD4hM8CsYCuFl8pBOrZuy6Gao6ZiwqwzaEPAL8cnstt27AUoOsmSWw/RYyynRhNQVBpNc9agjmklZFqd&#x2B;XvEa9Y5H3LEYb4S&#x2B;RRrw5hpphUVPMEQrfSMxmutH13VZCrSw2u5QE1Ud5QJd8XbMImhmiFUKTOMMqokbWuaJTsArUjQpQ3VPSJxY&#x2B;Q0PzGOsMrhF&#x2B;Vr7MfR5k3rSoJ3ylF/MBQdoaqC&#x2B;6yzVrrmBYd233lwaJLqxp6SiKwCAcHz0ZnqlSJvX9GO0q&#x2B;BaU83m&#x2B;5Z1qKG5cdghPZ9YELXBCNg1Yixj0VRdQdKJDUWBZVwjBZ9Hp8jMAlN4Dy7&#x2B;omJAJvHGd0SrMpX2Gm&#x2B;&#x2B;v7T15PbcUX7JABgeZYKR9zEq0kAb5X5qFixPkUaWDKN7NIQawZV1nYz2gx8mBrD/AOQuPUVXLUswsa0BFxqftD/7CdIcS4qOVy9/Wbyp04vlgucxCluIl2QiD6OXiPIuFszrdMCQxXqrjoBHWIBQGcvEyIHhM0we/OyHeoFTLbVHxfxFxyjuiD6YXWhNlZ6ZhbzoXca2OHxVmTd&#x2B;VDWghKXnPzBmvjlgEdWrgrdyd2J0HL2E6&#x2B;D8zCg&#x2B;8fBD8y&#x2B;y2/WUpV8sEKI8RCYfuxP8LC7B4iDBFTK/4DMDeCMlt1K&#x2B;lMHEhslNgayZ&#x2B;RYeGpd9Be2BUVUeLtYpERGjh3&#x2B;CFQxLJzFDHuraQeFV90HMCvLmoONtB4FXNBApUereIrk4vsARfPlae0oYDCesLDUGbbLMYlhYcOlsLndZaHaIytalKFFHzHdwHACziuXmEbpFr3mAq1Qt/veWF2IeqPwS614j5lJlhvqLvftCLmn9PE20WTrFeB3pQBthA9o9pRa6l/mMivIX7S5WUdBTUBWFqtIeWdrp6nrEFQOaDUIG3XdMmRN7nwTkJgB4LK5hIG0GG1fmZFgIg4asx9wfHoKX0CHWvpKxTK45RQxuahh9H6iF6&#x2B;zt3FezIWf/AGm6TjzWv2l7fbTWQOKwnK6QNSiTrZEpJQrCFv4zNFVsd4tJuy3x3RVXAuAWAy87fuNcIZ61iaY9JUo6GjANWE18GuZ3YcEJFDqK4UpZitZ0mnxMB1UEurL&#x2B;YQMTlocvloJropYBst/te0M4yByB/OFHMWuUwo1RHINHxAFV9AhdQwDqz/dy227CrysCm3i44V/dwuuaoO9R0tvVhAWvLtiSsOAKCBfsfrY22S2jEa32CR7kBc&#x2B;imN5MXgE3s/MKgJzSxGvqZVKQS8tU/wB0mXUFpyvECtsW62767xj4&#x2B;jhfVQNx5&#x2B;T5mhXhh5i&#x2B;POdSxGQnumF&#x2B;fghulMFcuPxEnHU4WD8MMdCC0lvc5Gv6ooG7z2lMbefHrbMCC0bMofua6E2zU0a&#x2B;i&#x2B;FG6xae19TFbLRcA0yS6nTw0BvihbLdxSDVBQoARVp1zFXMuBKDYwjFkqpJVePTRFDoYeKmD1xbOKhZxROaaHtEtw2Vzdl13EvhQe0IFJsb5sTYMKrblL6P/9k="
+                                        alt="Image Description">
+                                    <span class="avatar-status avatar-sm-status avatar-status-success"></span>
+                                </div>
+                            </a>
+
+                            <div id="accountNavbarDropdown"
+                                class="hs-unfold-content dropdown-unfold dropdown-menu dropdown-menu-right navbar-dropdown-menu navbar-dropdown-account"
+                                style="width: 16rem;">
+                                <div class="dropdown-item-text">
+                                    <div class="media align-items-center">
+                                        <div class="avatar avatar-sm avatar-circle mr-2">
+                                            <img class="avatar-img"
+                                                src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAMCAgMCAgMDAwMEAwMEBQgFBQQEBQoHBwYIDAoMDAsKCwsNDhIQDQ4RDgsLEBYQERMUFRUVDA8XGBYUGBIUFRT/2wBDAQMEBAUEBQkFBQkUDQsNFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBQUFBT/wgARCADIAMgDASIAAhEBAxEB/8QAHAAAAQUBAQEAAAAAAAAAAAAAAAMEBQYHAgEI/8QAGgEAAgMBAQAAAAAAAAAAAAAAAAIBAwQFBv/aAAwDAQACEAMQAAAB&#x2B;qQAEF4Z1U7oqvRxXYpvJFz8pgTc&#x2B;qUJN1KWpE3AqHkNbyl8NF2KRyReH2aXii2ZAy6AAAACFmoOyuljbntc1z6y9ZX3rEUkuWPqu&#x2B;7YqxLz1r6C3IpMCLngEbpUrHj0WEDn7QAAACAn6/YmddIqdfm&#x2B;8yUjS9d9tHAV9SzQMTwrU8umd&#x2B;7xySmNT8jXttbtw3rSzB69gX0HytljAr0AAAAENMsJWhyKzErdcISdbMHvdcklfki/Y5YMY&#x2B;yQUtGqTScTaPqv4S23Zl3mqPfKCL23G9mptnwIuAAAAI2SiYKa557pgTSjq3ks1v8A1E/Eiu4UzTGwizbm9VaNcxizgKlvnOrytYF2bZkNlw3cEewAO4AAABES8XBWee0K1Yt5JnU6Mm37Rn2EbhkK34RetPlE15bmH0rHxOP7VFSOvBY49/H344/ack1xHsYFjAAAADB/GkQHCC6ooi4jpHnMR00TmQaZlldsgyzyT5vZcXDNGTRIbf8ANH1Z0eRXk25NPmtZVqqtYQHcAAAAjZKHIhFYVw9KEDLV6l/fWb1JR8ce7qMTl69k2HpbnR6Qos7To0baupzKZW31FyNtOxYRuC22oCXAAAAK9Ya5EUKQh3r1yb6L7geRvLTfnbRPB0MuLS2c33y3oqwSrmG2uVRQ9T5yWqloFnIfoSm6Lg02YDDsAAAAK7Yq&#x2B;pmKnKdELxkMprptDTxDv87n1/HSfJjU84vTjtuyXfrarmtLM&#x2B;lik2jhBh3o2Y6bj0WADlbwAAACAn4RTM6nas9qVhdKLpvRzNFlm3VxPK1ZKFLfNrhFxyOgXvOdpddriXkP1OfONyHWbDp2W6nl0WIDl7wAAACn3CpkfKrWCvCRN3akWHZnmu&#x2B;VOvia5JquBVPnLP3nkdF79I/MX0Lsz6NGyUd0ML1ss3qeZ1HLtTzaLEBzdwAAAA0AKwuEHsgExz2Fita6Cyw6BWJwJiVQBlXSAF5YIlyArAAf/8QALhAAAQQBAwMDAgYDAQAAAAAAAwABAgQFBhESExUgFCE1EDQHFiIjMTMXJDJC/9oACAEBAAEFAvqY0AQ7nWXca67gBdwAu4113Kuu4113AC7gBdwAvXgXrwLuNddxrruVddyrrudZCNA8PLLfZxiyZctlyT&#x2B;64Ljst/F/runWJ&#x2B;z8sv8AZs66i6i5rmmIua5Lmua5eHBcVxWL9qnlmPsuS3XJclyW65Lkm9/puuX0bZPNbbonEA8Ef1FDyzf2HJcvFlsm&#x2B;rRTvsmdMt2i2XyfqT6b9sX5Zz7BMKbodCcmHAY09WElGnBk1UQomIAMb2qcdXDLWNqRa/4gQ4h1zGUqeRr5ISgyyt7dQF1LOAbbHeWWh1KcKKaDsoxkzyGhc3lu8Wsz2r6m1Ia3d9Q7ALbd267so2pwWAzc6eRHOJY5C36YAR8mDD9/BfH&#x2B;V3&#x2B;iUtk9iTuMjkmyabMs/ehWxtXWErlWzWia7LDHyET4C&#x2B;CQdLXyNawFypAR3jLRuqChbJSeUht7VW3PhPsPK&#x2B;&#x2B;1cm8p7NFceKc2z9blLX1AlzDsd2Fi4zymRrVx1g9KPKTRZrI4kHqTHejs6bE9m/Zhykz7Qpf2YX7Hyyb7VYw5NxRZOik3cC6nUWX0BXsW9I4eVXJuccIwshLK1aBXG2ao2VrELTB&#x2B;H2Fk8j/w0n6OLLIxcE&#x2B;9Dyyn2g48YOyKnCgN&#x2B;8OMd4QiyyTi3vAOeWl6ZiF1QOcJei6Uq9aBcbpRowwBfYRH/wBag3Aun/jvLJNvV39nd1MXJcJbx/bcb7TsOx62HDEcbGHrWVSqiAsmCJDdhqLKBDXx2kKnp8Za/wCIjcdWpHZ8B8f5Xf6NlwZcV0N5Sr7pqe79visnBqGoBleSu5GeOL&#x2B;Yi2rrmcY9RX5PVCFq1Y7s8SDeQqUv28F8f5X32rc91DdbtFHvdJNlouo5aCfKw31zKXHuNvLh7Ucyt4Yu9YlrFNhivndSGixI3JdFvUN0qzNMWC&#x2B;P8shHlWgOME&#x2B;0UcyLP3bhJRmPmWxxIaQ7VarX/LF/JmK8ahjRHn82zPoPE9JPaIKV/IEtQs25xHirPUq4D4/yysmjTjaGurCTWCw4k/SpPtCjDaHpY2zeljTWoBTzhZXSxMbKGMsdX9RZ0r7Y6xRhcWXo2ar3Z2GWHvDt1dNPvi/LO7dvDIUE9kWwjhTQFNSxwiolXZNkAiJcN/rUrPQ1DextS9HsdeD9Li&#x2B;OqeipzfhFi/tXtMBuxJgLmCPoyxG1gvLP/HMKO0ZwCmsj2PbHXEPITOCVhSixHk3NZA7h1DG9WtiPar1h6XtVrF4FgBY2iLkpE/T63ktPDiPHeWe&#x2B;Oizb8uCYqtk67uTZO6su4gy9oWi9e/YZpvx99K4wF/T1PHQZVXkaH/Tkh1iRWE&#x2B;w8s58fxdTkw4nyzLE8yk3aLbvNEg05Wp/tVm5E/kIxcR6DsRPgo/oFX26kn2eP8bclg/sPLN/YcVnZ7xFVCKeMZ2oS3jAPu&#x2B;/vmJ9PGAb3GOTKxYaYdA5RqJSPwFUfeG6GT9PJ1gPjvLMfZHNxjZFVHKBxknAXTpct4CbiotstVn6WDr/AMWDdEZ48K34dY/jVNPkPFz/ANOT/pqmkaqOHtgfjvLVcXlhzZck3x853rhtt&#x2B;v1gC/pfaU5T2lrixthQDbi79U&#x2B;QluXSE2jpv8A8UP01&#x2B;eyp0uENpLT/wAd5ao&#x2B;I1LWmSzgjEq4mRZO2JBPoijxYUOLHlstb2ORCn5oH9lmXI2hC9bCy9o0iRmisoWSSeE3eOB&#x2B;P8rVQV0M9IYgibS2LZvyvjF2anwbCU2XaKilp7HyVz8PcBfL/i/TKb8MNMxX&#x2B;MdNb4/RmHxUewUEPTONFJ9P0JKGm8cN&#x2B;xUWVeuOqP6//8QAJREAAgECBgICAwAAAAAAAAAAAAECAxEQEhMgITEyUSJBBDBh/9oACAEDAQE/ASTsrmvI15GvI1pGtI1ma0jWkU6jk7PZPxf6aPlsn4vBU2zTZps02ZHglcp8bHyiMPQ&#x2B;Dl4ZW&#x2B;TTfonTuQjYj3tuJFiEbysxWLpFZZZcERbbCwpxuyFPLK5OnmZXgkiItjwuZ2U6lpJsUs3iZpRfyK888hC2MuLBysU6soQVyVZz&#x2B;KJzSm0IW2ywnV&#x2B;kX5Px5RcMsirKFNXQ3cTcSjPM7PdOVlxsqt5eMaHltZV6wXMj7J2UORd4UfLY8KkeL4U&#x2B;Zn9Ky&#x2B;Ajso&#x2B;W/JH0KKXSwaT7MkfRkj6FFLrH/8QAJREAAgECBQUBAQEAAAAAAAAAAAECAxEEEiAhMRATFEFRMiIj/9oACAECAQE/ASCzSSPFh9PFgeLD6eNE8eI8PE8eJ48SrSUI3Win&#x2B;0XL68Q1a2in&#x2B;0XsSrwid&#x2B;B3ondidyPSUsquVG5Su9CdncqVb8kbSFZCW45pbHcRCoo8lapmkXvofBb2SYn7JVP5uhtm7KLzR3Ji0MbJbHA3sSqZo2IVMqsUZ5mTFqy3O2idJZXYUPo6a9FGnliSFpysn8EQpymVKUXN2FTUf6YqLlBSXJJPTe25nk&#x2B;RtFLDJrNItZWRiYSU8yKUZ1JWLWQ4KfJXoqCzR0PgTKMHKST68ooRWfca6Yr8aHwKPswyvK/Se0Da1ynmdRWJdMT&#x2B;NNzDytKx6K21NjfpGGf&#x2B;rJHBiH/GpbcHcn9HKT5fRNrg7k/pnl9HJvnr/8QAQhAAAQMBAwkEBgYJBQAAAAAAAQACEQMSITEEEBMgQVFhcaEiMjORQnKiscHRBSNAYoHSFBUkNENSkqPwNXOCsuH/2gAIAQEABj8Cz2nmGrxOhXidCu/0K7/QrxOhXidCvE6Fd/oV3&#x2B;hXf6Fd/oV3&#x2B;hXidCvE6FeJ0K8ToV4nQq0wy3XPMfYhzOueY&#x2B;xDnrnmPsJe83BB/wB467uY&#x2B;wTgEyk3w580z1jru5jNcFfcrJGa&#x2B;9FxCNWtUFGnxT9G8vrD0CFaDyGj&#x2B;lDSUzUP3blLqEU&#x2B;BvVuhVDxw2ZzRp/iUzc0pvM65HEK9RsWKmJUbEScEXE9kXqpFSKbSdGAryZdeSrAwUAwTirnk81RrWobg/iEHNNppwIUDvFS5CN6bzOuc12pVNsNuxKFKpThtk9rhgrZ7ovhfs1OYUOoH8FJp2OaLnU5aNyE3JuS1TLHPhh3IclwjM3mdc81AUQt2aFpKMk0TacBuXeVHJ5hpMnkgxjQBwWGYiFbHccsmpNmdICPjmKkpvM655qVxGe1KLUH5N9RRv0kb&#x2B;Cyo1LzRJZK7T2&#x2B;aIY8EhB1V8BWGV2WtxTaghzWnYv1jUbZpwRS48U8onC5OcShzOueYV&#x2B;a5YojFG5OtQGjFfSbqJ7ByjFvIJjmtrwcDuVp5dukqzFpoRt5M87bbVlLg5zmaMmHLI2NcHHRiY2TenIwngBN9Y6556uGKlVGYWmlqr03C9tSD/SF22INptsgLttkKbHVVw1oDdGfcmPP8TtdEeJRlPPFD1jrnX7yyiiLhVDarfcfcoTO3RbS22j2kKQdRDDdDjeon8UaTe/VNgBU6bRAa2EJ3rsn8E6bjKbzOuc96uXauV6FkOKyf6RosM0Ln8imfobhTv7V6tVKeTudGDjPvVoUsmB3KsK7rVGJjGFkjH9wPteV67BTbW9YppIQ5nXI45plXZr1ZayVGCfSqdpjxZIWgrn6qtfScv2fKAHKcoqCRtRoU4fOJWU1Xj68AAcJzQYBasVTDhZdG1D1jrkuMCRnhqdcVgtI7ErBF7qluNiyyyZq0rJHW73K8lpGKvcVafeMStJ/O4n4fBSH2Hcl22Q3Y4bUA0thNs4tEEJvrHXdOEhXMjiVsVzb&#x2B;S7onMRNloVWlTkVGd&#x2B;0if5sAsuoTjHmAnOdRbbOLhiu5dxK0VBt5uAVGg3BjQJQRtCRuKtU4oOPktPk5/SKPpAKnUbgXO9&#x2B;u71gu9B3K9trisPJGoZgCU1xFi1szFztrvNAnfgssrNvLKxuQNOuxjj6LjBCJq5VTJ3MMlPrHsZPk/8AEqbXHBHR1G1CNxTROJW5STDQop07XEoWWhsuJu13cwr0VcAhQtd43jggApOxSM2WVR6VRzuqDt4VydSeCbVaXRwVrB0zITarxDtnzXBQe433q7shDbedd3MZi5ysUzDlVqPGAxRd0QQGwBcEfvBcQUXlMYB26T3NPnPxToQYO60Rm5mVeZ4JvM67uYzU6QrilJvRLalurvRccXOURM3yhwX4LKnYRTceiB4I3TwUAWVldJ9qy8Nddzj49EeSnMOS&#x2B;CbzOueYRDcd6NSq&#x2B;29CxSsqg3hKBT32bMnZtRm&#x2B;Flp3iz5oINHfcqQ2m9ZRlT23PcA2Ru/zonckCd6PJU6lzQ/0liYTeZ13w6ybQvT2VXEWDEzihZpnRN2kYrDyTYubCaPRQAx9yM70RhpKwH&#x2B;eStPMNU7E1u4LI43O/wCxRTm7nKE10XAQ0ZmzvOvU5hGpTdZ2QNqpU6jO2rrlUk3G8SvVzFvNZJQ2NDqh8/8AxQLmoJyDD/BeW/H4ojeqgGIcWlBQ24KSm8zrmlWbbYdkrtZGD/zd81&#x2B;6&#x2B;275r929t3zQZoYaOJXg&#x2B;0V4XtFX0Pbd81pK&#x2B;QaR8ROmqfmX&#x2B;mf36n5ld9G/36n5lP6tv/36n5k9uS5Jog&#x2B;8/WvPvK8D2inOZk0Fxk9t3zV9D2iiW5Pj993zXg&#x2B;0VYptst3an//EACgQAQACAgEDAwUBAQEBAAAAAAEAESExQVFh8CBxsRCBkaHRweEw8f/aAAgBAQABPyH6qq9i6uD&#x2B;b4g3i&#x2B;IL5vief&#x2B;US8XxPF/KDeL4nj/lPH/CeP&#x2B;U8/wDKef8AhKPF8Tyfyni/lPF/KJeb4hK/Yuq9Yv6IAjCFLlZLGPqBtgSriQZ&#x2B;lxjL/wAeMo5iyZfQTS7mcrcKMGwcEdxriUy1RylYKPd63XmZhDeVIGZfSTaOCyD&#x2B;gbjG5gognFUSWKaGv2v1uvCzLQi7mekzB&#x2B;gtDUMymNv6Cx3Ku4orBtiuaFYNI8X1&#x2B;K6xJvWmXBkC1F5WZwKj2ymHBXMIpOuvtFMxwgz36TYOCoA&#x2B;0zxPP&#x2B;Sy2vqC/hCvMws&#x2B;4nMZmaMcU1V5MA55PrU/wZzfjAKmGplH2QbVZ1hSli5ADlhckh7S1DWli6H/AGUNrNHbAWnl7wGq2FzL9QFAs7Q&#x2B;E37/APIY8NosSWWlx2l9mXOYAHcnmuvrw9wgm1jCtkr94Nwc3Oyxwt5HHP6itapz4UZp1ZkvMKj6b4qWYXvGDqpnloRixmGsamZt166x7XARzUUhhlXO4a8rPrv3ZGFKGDCiu0bLPxj0DqKHc5qPe4uq0zHFXAcS3vCvRAEIqhFUomSVHuKqAY9vvGetcOC/8EZG6olKq6IVWBnmuvrufZCoSo3cNi4mCBTgOJsihmcKFZd8KaIblk8buWYEb/AAwuTtHvHKLqKm2ELlUrBoJ2tPyInEWi4ivbhLRRWDpPB2/wDw5TWzGMxq1tMBylllFajsaX3dE6qGV2EHZ/aWwzkKO/8A&#x2B;wosmfNK3YLLtzMUHXDDF1O2hGEFh&#x2B;gg5NH7md64ZeO1cQaQoMQJdv8A19dE7JbhmKaYowVEK8d4c53GWfVGj/qCoSgq3cGILYdmo4P0ZBjZ4h0&#x2B;90pX0DR0tFxqoTtQlgrgB7Nsw/sS2TzfX&#x2B;wREyXC0c51AxImyjrCrLYqnuaagohlcTT03vHtAsPt&#x2B;QubSVrixDMAT1alTBj9j6TDsp7p&#x2B;wmO6PJ9dw7kvo3Ldypag6Lj1fcnIL7RFA8wSqy/lz8x4kJYLDhaLTfwlXmqgo/omgH1m3tLiDAcALfESAsYWHTE0kXCCllcPk&#x2B;uyMYTTZZl7Iy1&#x2B;U53MsVTuxAsepE1DGXFQ8jAX9YvfpKQgcGGoi9vhGiQ4NSvkgfuPwR1lEwjAVpWLzBFVbzLFuJyjvy8&#x2B;ttGwPeYec&#x2B;8Gs4iMJe0sVY6JZLSi5b4NI8EcnkHDNaJxWge7zMx965duzHymXMYOx5mxXVvtKCwckFdtZ7EN/U3kMQ0WZ1kY8PLRB5YPIGblf8Af16Kuke81i&#x2B;pcwjb7RZiIsNpGqsgIxoMWFHWldHvFa2cOxLA0V9jc4KaFflHppmFQywNysD8iS6sZD1CVHi6Qu4zfoBl9uIkFRi0/ifEAT6xWjxY0qfvIQmH9kIKN9OEoSTES0Wcq7xFM8xtbsUNxWBgw6Kn5KVAxCilk6PaK6pj9WIAtYXZhYcaf1OcKi1PtEecJiYFpQ1BEImYh2h7RAgpYNFrn1&#x2B;C6ylyjZtUenI61CbslVwNyuHiYLo5yLfeC7sqs4Ui/dyjXcIjAWy0VeqqCi&#x2B;n9jLVv6TDUKuPS4zYuEAMGdOsOzE6tVCFK8p9/Wb8LMS6ReMEcoP3TME0HuYODeGhthwRbqKciIbdDOfae51l2kVIqoxC6fkLL44mZNtKTsJvvMAaqYrl&#x2B;4hfb9jUIEFf29fmusznINu810lE4M7TfCy&#x2B;xBvDQ6T9ilb8kKRmV2yjg&#x2B;yDKbG2MJBnRxN0nySIes5nGHdx3gZ8oLJdu3slsgDxe/rF&#x2B;ZmYwmnZCV3XnLF&#x2B;7ktdEa0qh97mb0VDsWo1yeEtW4M1Fta/jf7EpdCXTwWvQl2b1/5CC1X7lU&#x2B;6RTOLS0i8iW17sfqEBQtW/YIBm3RqVwa/29ZW2pe8A/poQgnW2RTndilEJQpgc0LJ&#x2B;5sSN1qOiz8YllSh6hmMyQ6QeoODtKA0ZOozRDL0QnvZmQ6sTi6uhJZgWBOZ/t6wNmh/3M/f/UlGAb6veMsS9o66wcCCt5cqmwKWFSdUv7f9gKv3guh8vzKodHEN&#x2B;/Lt3qdvze//AEipW3Sa&#x2B;jD2YArvEyUYohJJ5rr67gaFsPiK2z3mpAK&#x2B;g8AMdAP7RJTbf/3gXk&#x2B;ZyrzAHrFNDF3VHdO2iYuliDdPdFfRVOS/dma9vPmd/hBMEVaefMpMO&#x2B;aC5W/nuCay3kvz6P/aAAwDAQACAAMAAAAQ84qnOj/&#x2B;A9C888/Uw9aaU9ZQ8888pa/jiGvme888/wA0cVye26&#x2B;fPPPCcticBkd&#x2B;/PPKKH/2qN07cvPPPOltbrTw6k/PPKA2R7cOwL4fPPOwn5H05UihvPPPu1sllLxkDPPPOrmt9KSMMk/PPKhqLjuioSGPPPIIo3PoPogPfPP/xAAiEQEAAgICAQUBAQAAAAAAAAABABEhMSBBYRBRgZHwobH/2gAIAQMBAT8QjOOp4z98x9s/fM8Z&#x2B;&#x2B;ZdoIN0Q9kngJ4CUI4fzR9Ag9el&#x2B;lwqnquH8kBY9gmeoxKfaeGNjTEdEJgcDYSjMXV3H2JozAtCIl2jZkMQ1wbiNSzcehKSBGCOEsJOkEGeJ2ivUq4QK/qg5Mz1wlnU04tIWG4U1AIugRdEUgYmXNRUTbhgTFwzW4pdQnlggbGVfbOhNxkpeOCWVKtEBuKLGzZhrce8XgXLFsUwxeKNdwmYIbhhxDW6MKiTD4cV1GFZVdw0EbaETOkVwtM/y4aSsXGfFHDMWAgqYs2J7oa&#x2B;PKhKngfUXsD0AoXPG&#x2B;p4H1ErFev/xAAkEQEAAgIABQUBAQAAAAAAAAABABEhMSBBUWGhEHGBkdHB8P/aAAgBAgEBPxCCjpZ33j8nefH5O&#x2B;8fkR5vj8g3N/3xBc2HXfH5O&#x2B;&#x2B;PyWwbvg80hT0XGOJY&#x2B;nOGPPweQSgtYTlmK4KxZxmHVgjSOIdx4QFV0S2D&#x2B;oAoJp3N4iOUHauYzSN2CPAKkwZ7opdRxFuDaDMsDMEUHaPMfBpMtQWtlxSpqMPEjJjDFmb8LS5IjeL84oNo40owyz0mD5wK5m/BS4JcWksMB2MOKMdZY3JHLLg&#x2B;aRzSUkBN8CsXKAMpUvcMYe0DWURHrWGndLAEHKFUbhXRwbopgjc4uLHArHmR1OcZQVCZfLg3Sphl6SXdNRWPZgC6G2ZD&#x2B;TWDi48ffgK5xGie&#x2B;4Zh7Xb7gKap8oMHWXoy4HfhoiVeEA0/tgtI/PovaRim39s7r7YFSX1//8QAKBABAAICAQMEAwEAAwEAAAAAAQARITFBUWFxIIGRobHB8NEQMOHx/9oACAEBAAE/EP8Am5tBXZOsAs0tpNHaDQQEWnODbUgxSNN/wHDPB5CUDFEdz0BgABsol5SIuyN4QfWRnX7pQ3mYBVTkbit/uUKN9ZhoGd6l6rcpLYJrTxBYBcaq1BFkY7mEMsWbKhQH&#x2B;n1qslf7TCqF0SZbYkqEG4mH2Sm8WpogYLmtZdlovwTNsneWMou5ehCchJ1IYhR&#x2B;313OSq85nNiisy1lSU0YX21EOfiJd/MU3VSoN5iczek9pUGMdXeWMa7zyjmCZJavPaIpQg6Ch61cbgN2IqcXGqN9JgnYnmIpFjWY3MI5w3A06yjhLim2PMA5jWadJe6IkYG0dEYXWwdusHQD/oGSMqVehrc7eCXmGzvurgm0OkRUT7BAkIs7/EzPIEx2A7e0oWmJbXSnTDjfFXHbsQEXrk0d7jwJ1pNejH&#x2B;1EyslFBnQtX4lAbCbc8bB8wit6dWIVa4Zt6RCoWKctQwqD1oxrVoFRQDhAw6KVQ6kHdHWnydET4BcB6bOgIUpAY4pmPRdB0UDsvOHU6YFqreVXd&#x2B;MB2vrNZHRbl/kwtAHJOl8EHRTSyiyyvk4cptOQN26YH5wslpGKtzxDpW5lEWyrth&#x2B;NXrMlquH1naf6Y&#x2B;EV0g8XXOJTCM/lMArnRiVIHrLYjVQKbtZotrW5S1JhvCMraFuizLuGsSZ5gKFfHmpVNaC0u5rcue&#x2B;L7Dwx/WnbOpmsNMYDnrFACaGns7wZgA62NBnZPi4z1K14uNnAADriX&#x2B;ACzCIFZfWJwvDXvAmNzecTOkHLcrACmeUZVXqiey7QNLRBt3p3Q29rlGIMOaPZdHvKP7q0vKm4ac4AalvV3IGBRwGono2NyqUihxXIl2M8pRb4WRXIfNUqy1X6h6UDQzSqup6wOC4aPML0GedwQxcD0i3dxXSYyWqGuZhjlHlM9P0tLPiECn57YpXDdXWM4Csk5p0pFCnsMoUHVk/cF7t5g3uCDSrlewltwHkfdxGm6AYoaHrUpmCONhPWgA73b0IQt0VTBNvLM1g0RRkyx2uPPrXSNpfc34ZadJcPI5ZUulzFKgotlYA2rq5S12q5goAnUhlXtGfaSyzoHu&#x2B;Ze9MSMNCGkM3YLNWEeizeYnDft7MFFeQARujPxlhdD444IBu&#x2B;KbbwRV1o6ZEp0/EUjNmbSXeaJNVyeYSe1mi6j3xhDFyj9JKu/WcItt&#x2B;5hrSlTZggpRbuKsA/KEIsKoiaJWoDg3B5s/aWxVvKfoX3LyFlED5pzNbiCiFUIPGiPKLYCD7XUIE1l3H1BPs1t0Qfh9qgShoa95kbZM7tlRYEU4xCfFPHrC7v6YobJRQZiEjXlWgxUcrNdfMgg8zSyvs4wf6IM2EFYcN/FB2AyozyjesQW4lO&#x2B;wGvbPtACNAgiPaNsc6BqQHi4AoZhVFEBThAU1GU0LMpDOZlORAUrPXmKarP7wNQuJQFRQo1xCsB56xpZjjJzDqG9bwjp2eCo&#x2B;2eBbVS1sBAA9klvYsujHEVpQs9&#x2B;VHb0iLqdtJW/3zMVCszAEhjL8R3MmHMrMePl7xxkGtXBdU1Ypg0YXpAILknKwgzQHXrGwo2o94CWv5eIRS1OWI70vPZCVa10G40IQwp9RM9myr7xBQzSOYAjVNCmDkO8FIAeXOeIrDYdFVbjepya6jxa8whDrFjkzzM/wabAEPLS9K7w0E9hVMW6upVIJsYDsqUq01oHCMRL6wRgZmm4DZ1UUl949LTu2pkWerNSyUk5UiuZwTlh3TD4hM8CsYCuFl8pBOrZuy6Gao6ZiwqwzaEPAL8cnstt27AUoOsmSWw/RYyynRhNQVBpNc9agjmklZFqd&#x2B;XvEa9Y5H3LEYb4S&#x2B;RRrw5hpphUVPMEQrfSMxmutH13VZCrSw2u5QE1Ud5QJd8XbMImhmiFUKTOMMqokbWuaJTsArUjQpQ3VPSJxY&#x2B;Q0PzGOsMrhF&#x2B;Vr7MfR5k3rSoJ3ylF/MBQdoaqC&#x2B;6yzVrrmBYd233lwaJLqxp6SiKwCAcHz0ZnqlSJvX9GO0q&#x2B;BaU83m&#x2B;5Z1qKG5cdghPZ9YELXBCNg1Yixj0VRdQdKJDUWBZVwjBZ9Hp8jMAlN4Dy7&#x2B;omJAJvHGd0SrMpX2Gm&#x2B;&#x2B;v7T15PbcUX7JABgeZYKR9zEq0kAb5X5qFixPkUaWDKN7NIQawZV1nYz2gx8mBrD/AOQuPUVXLUswsa0BFxqftD/7CdIcS4qOVy9/Wbyp04vlgucxCluIl2QiD6OXiPIuFszrdMCQxXqrjoBHWIBQGcvEyIHhM0we/OyHeoFTLbVHxfxFxyjuiD6YXWhNlZ6ZhbzoXca2OHxVmTd&#x2B;VDWghKXnPzBmvjlgEdWrgrdyd2J0HL2E6&#x2B;D8zCg&#x2B;8fBD8y&#x2B;y2/WUpV8sEKI8RCYfuxP8LC7B4iDBFTK/4DMDeCMlt1K&#x2B;lMHEhslNgayZ&#x2B;RYeGpd9Be2BUVUeLtYpERGjh3&#x2B;CFQxLJzFDHuraQeFV90HMCvLmoONtB4FXNBApUereIrk4vsARfPlae0oYDCesLDUGbbLMYlhYcOlsLndZaHaIytalKFFHzHdwHACziuXmEbpFr3mAq1Qt/veWF2IeqPwS614j5lJlhvqLvftCLmn9PE20WTrFeB3pQBthA9o9pRa6l/mMivIX7S5WUdBTUBWFqtIeWdrp6nrEFQOaDUIG3XdMmRN7nwTkJgB4LK5hIG0GG1fmZFgIg4asx9wfHoKX0CHWvpKxTK45RQxuahh9H6iF6&#x2B;zt3FezIWf/AGm6TjzWv2l7fbTWQOKwnK6QNSiTrZEpJQrCFv4zNFVsd4tJuy3x3RVXAuAWAy87fuNcIZ61iaY9JUo6GjANWE18GuZ3YcEJFDqK4UpZitZ0mnxMB1UEurL&#x2B;YQMTlocvloJropYBst/te0M4yByB/OFHMWuUwo1RHINHxAFV9AhdQwDqz/dy227CrysCm3i44V/dwuuaoO9R0tvVhAWvLtiSsOAKCBfsfrY22S2jEa32CR7kBc&#x2B;imN5MXgE3s/MKgJzSxGvqZVKQS8tU/wB0mXUFpyvECtsW62767xj4&#x2B;jhfVQNx5&#x2B;T5mhXhh5i&#x2B;POdSxGQnumF&#x2B;fghulMFcuPxEnHU4WD8MMdCC0lvc5Gv6ooG7z2lMbefHrbMCC0bMofua6E2zU0a&#x2B;i&#x2B;FG6xae19TFbLRcA0yS6nTw0BvihbLdxSDVBQoARVp1zFXMuBKDYwjFkqpJVePTRFDoYeKmD1xbOKhZxROaaHtEtw2Vzdl13EvhQe0IFJsb5sTYMKrblL6P/9k="
+                                                alt="Image Description">
+                                        </div>
+                                        <div class="media-body">
+                                            <span class="card-title h5">Md Ishrar Alam</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="dropdown-divider"></div>
+
+                                <a class="dropdown-item" href="/User/Signout">
+                                    <span class="text-truncate pr-2" title="Sign out">Sign out</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- End Account -->
+                    </li>
+                </ul>
+                <!-- End Navbar -->
+            </div>
+            <!-- End Secondary Content -->
+        </div>
+    </header>
+
+
+
+
+
+    <!-- ========== END HEADER ========== -->
+    <!-- ========== MAIN CONTENT ========== -->
+    <!-- Navbar Vertical -->
+
+    <aside
+        class="js-navbar-vertical-aside navbar navbar-vertical-aside navbar-vertical navbar-vertical-fixed navbar-expand-xl navbar-bordered  ">
+        <div class="navbar-vertical-container">
+            <div class="navbar-vertical-footer-offset">
+                <div class="navbar-brand-wrapper justify-content-between">
+                    <!-- Logo -->
+
+                    <a class="navbar-brand" aria-label="Flocard" href="/User">
+                        <img class="navbar-brand-logo" src="/assets/svg/logos/logo.svg" alt="Logo">
+                        <img class="navbar-brand-logo-mini" src="/assets/svg/logos/logo-short.svg" alt="Logo">
+                    </a>
+
+                    <!-- End Logo -->
+                    <!-- Navbar Vertical Toggle -->
+                    <button type="button"
+                        class="js-navbar-vertical-aside-toggle-invoker navbar-vertical-aside-toggle btn btn-icon btn-xs btn-ghost-dark">
+                        <i class="tio-clear tio-lg"></i>
+                    </button>
+                    <!-- End Navbar Vertical Toggle -->
+                </div>
+
+                <!-- Content -->
+                <div class="navbar-vertical-content">
+                    <ul class="navbar-nav navbar-nav-lg nav-tabs">
+                        <li class="nav-item">
+                            <small class="nav-subtitle" title="Pages">
+                                <b>Welcome</b><br />Md Ishrar Alam
+                            </small>
+                        </li>
+
+                        <li class="nav-item">
+                            <div class="nav-divider"></div>
+                        </li>
+
+                        <li class="navbar-vertical-aside-has-menu" id="planterManagement">
+                            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;"
+                                title="PlanterManagement">
+                                <i class="icon-Tag-a-tree nav-icon"></i>
+                                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Tag Your
+                                    Trees</span>
+                            </a>
+                            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 60px;">
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User">
+                                        <i class="icon-Tag-a-tree nav-icon"></i>
+                                        <span class="text-truncate">Create Tree(s) Tag</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User/TagCluster">
+                                        <i class="icon-Tag-a-tree nav-icon"></i>
+                                        <span class="text-truncate">Create Forest Tag</span>
+                                    </a>
+                                </li>
+
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Tag-a-tree nav-icon"></i>
+                                        <span class=" text-truncate">Tag Other Assets (Coming Soon)</span>
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </li>
+
+
+
+
+
+
+                        <li class="navbar-vertical-aside-has-menu" id="planterManagement">
+                            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;"
+                                title="PlanterManagement">
+                                <i class="icon-Offline-Data  nav-icon"></i>
+                                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Trace Your
+                                    Progress</span>
+                            </a>
+                            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 60px;">
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User/SyncTree">
+                                        <i class="icon-edit nav-icon"></i>
+                                        <span class="text-truncate">Sync & Update Tree Tags</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User/SyncCluster">
+                                        <i class="icon-edit nav-icon"></i>
+                                        <span class=" text-truncate">Sync & Update Forest Tags</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User/ApprovalStatus">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">View Activity Logs</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">Manage Notifications(Coming Soon)</span>
+                                    </a>
+                                </li>
+
+
+                            </ul>
+                        </li>
+
+
+                        <li class="navbar-vertical-aside-has-menu" id="planterManagement">
+                            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;"
+                                title="PlanterManagement">
+                                <i class="icon-Reports  nav-icon"></i>
+                                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Track Your
+                                    Impact</span>
+                            </a>
+                            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 60px;">
+
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">Monitor Health </span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="/User/AssetReport">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">Track Growth(Tree Chain)</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">View Reports & Insights</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Reports  nav-icon"></i>
+                                        <span class=" text-truncate">Export Data</span>
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-Planter-mgmt nav-icon"></i>
+                                        <span class=" text-truncate">Access Analytics Dashboard</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="navbar-vertical-aside-has-menu" id="planterManagement">
+                            <a class="js-navbar-vertical-aside-menu-link nav-link nav-link-toggle" href="javascript:;"
+                                title="PlanterManagement">
+                                <i class="icon-dashboard  nav-icon"></i>
+                                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Trust
+                                    (Coming Soon)</span>
+                            </a>
+                            <ul class="js-navbar-vertical-aside-submenu nav nav-sub" style="display: none; top: 60px;">
+
+                                <li class="nav-item ">
+                                    <a class="js-nav-tooltip-link nav-link" href="#">
+                                        <i class="icon-dashboard nav-icon"></i>
+                                        <span class=" text-truncate">Green Asset Certificate</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="js-nav-tooltip-link nav-link" href="/User/Dashboard_Index">
+                                <i class="icon-dashboard nav-icon"></i>
+                                <span class=" text-truncate">Home Sweet Forest</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="js-nav-tooltip-link nav-link" href="/User/PlanterManagement">
+                                <i class="icon-Tagged-assets nav-icon"></i>
+                                <span class=" text-truncate">Your Green Profile(Coming Soon)</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="js-nav-tooltip-link nav-link" href="#">
+                                <i class="tio-support nav-icon"></i>
+                                <span class=" text-truncate">Support & Grow</span>
+                            </a>
+                        </li>
+
+                        <li class="nav-item ">
+                            <a class="js-nav-tooltip-link nav-link" href="#">
+                                <i class="tio-group-equal nav-icon"></i>
+                                <span class=" text-truncate">Community Canopy(Coming Soon)</span>
+                            </a>
+                        </li>
+
+
+
+
+
+                        <li class="nav-item ">
+                            <a class="js-nav-tooltip-link nav-link" href="#" title="" data-placement="left"
+                                data-original-title="Back to FloCard" id="lnkFloCard">
+                                <i class="tio-arrow-large-backward nav-icon"></i>
+                                <span class="navbar-vertical-aside-mini-mode-hidden-elements text-truncate">Back to
+                                    FloCard</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Content -->
+                <!-- Footer -->
+                <div class="navbar-vertical-footer">
+                    <ul class="navbar-vertical-footer-list">
+
+                        <li class="navbar-vertical-footer-list-item pt-1">
+                            <!-- Other Links -->
+                            <div id="otherLinksDropdown">
+                                <a class="btn btn-icon btn-ghost-secondary rounded-circle">
+                                    <i class="fas fa-sun" id="themeIcon"></i>
+                                </a>
+                                <script>
+                                    const ThemeBTN = document.getElementById("otherLinksDropdown");
+                                    const link = document.getElementById("styleThemes");
+                                    const themeicon = document.getElementById("themeIcon");
+                                    const saved_theme = getCookie("currentTheme");
+
+                                    if (saved_theme === "light") {
+                                        link.setAttribute("href", "/assets/css/theme.min.css");
+                                        themeicon.setAttribute("class", "fas fa-sun")
+                                    } else {
+                                        link.setAttribute("href", "/assets/css/theme.dark.min.css");
+                                        themeicon.setAttribute("class", "fas fa-moon")
+                                    }
+
+                                    ThemeBTN.addEventListener("click", function () {
+                                        if (link.getAttribute("href") === "/assets/css/theme.dark.min.css" && themeicon.getAttribute("class") === "fas fa-moon") {
+                                            link.setAttribute("href", "/assets/css/theme.min.css");
+                                            themeicon.setAttribute("class", "fas fa-sun")
+                                            setCookie("currentTheme", "light", 7);
+                                        } else {
+                                            link.setAttribute("href", "/assets/css/theme.dark.min.css");
+                                            themeicon.setAttribute("class", "fas fa-moon");
+                                            setCookie("currentTheme", "dark", 7);
+                                        }
+                                    });
+
+                                    //if (saved_theme === "dark") {
+                                    //    link.setAttribute("href", "/assets/css/theme.dark.min.css");
+                                    //    themeicon.setAttribute("class", "fas fa-moon");
+
+                                    //} else {
+                                    //    link.setAttribute("href", "/assets/css/theme.min.css");
+                                    //    themeicon.setAttribute("class", "fas fa-sun");
+
+                                    //}
+
+                                    //ThemeBTN.addEventListener("click", function () {
+                                    //    if (link.getAttribute("href") === "/assets/css/theme.min.css" && themeicon.getAttribute("class") === "fas fa-sun") {
+                                    //        link.setAttribute("href", "/assets/css/theme.dark.min.css");
+                                    //        themeicon.setAttribute("class", "fas fa-moon")
+                                    //        setCookie("currentTheme", "dark", 7);
+
+
+                                    //    } else {
+                                    //        link.setAttribute("href", "/assets/css/theme.min.css");
+                                    //        themeicon.setAttribute("class", "fas fa-sun");
+                                    //        setCookie("currentTheme", "light", 7);
+
+                                    //    }
+                                    //});
+
+                                    function setCookie(name, value, days) {
+                                        let expires = "";
+                                        if (days) {
+                                            const date = new Date();
+                                            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                                            expires = "; expires=" + date.toUTCString();
+                                        }
+                                        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+                                    }
+
+                                    function getCookie(name) {
+                                        const value = "; " + document.cookie;
+                                        const parts = value.split("; " + name + "=");
+                                        if (parts.length === 2) {
+                                            return parts.pop().split(";").shift();
+                                        }
+                                    }
+
+                                </script>
+                            </div>
+
+                        </li>
+
+                        <li class="navbar-vertical-footer-list-item">
+                            <p class="font-size-sm mb-0">
+                                &copy;
+                                <script>document.write(new Date().getFullYear())</script> FloCard
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Footer -->
+            </div>
+        </div>
+    </aside>
+
+    <!-- Maps Initialization and Functions for Pointers-->
+    <script>
+        $(document).ready(function () {
+
+            //if(navigator.onLine){
+            //    initialize();
+            //}
+            //else{
+            //    $("#offlineImage").removeProperty("display : none");
+            //}
+            $("#txtChangeFarm").on('click', function (event) {
+                event.preventDefault();
+                var url = '/User/FarmSelection';
+                window.location.href = url;
+            });
+        });
+
+
+        //if (saved_theme === "dark") {
+        //    navigator.geolocation.getCurrentPosition(initializeMap);
+
+
+        //} else {
+        //    navigator.geolocation.getCurrentPosition(initializeMap);
+
+        //}
+
+        $("#ddlSpecies").change(function () {
+            //alert($(this).val());
+            if ($(this).val() == "Other") {
+                var element = document.getElementById('txtOtherPlantDiv');
+                element.style.removeProperty("display");
+                //element.style.removeProperty("height");
+            }
+        });
+    </script>
+
+
+    <!--Dashboar_Index.cshtml initialize-->
+    <!-- End Navbar Vertical -->
+
+    <main id="content" role="main" class="main pointer-event">
+        <!-- Content -->
+        <div class="content container-fluid">
+
+            <!-- CSS -->
+            <link href="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/css/smart_wizard_all.min.css" rel="stylesheet"
+                type="text/css" />
+
+            <!-- JavaScript -->
+            <script src="https://cdn.jsdelivr.net/npm/smartwizard@6/dist/js/jquery.smartWizard.min.js"
+                type="text/javascript"></script>
+            <style>
+                :root {
+                    --sw-border-color: none;
+                    --sw-anchor-active-primary-color: #00D179;
+                    --sw-anchor-done-primary-color: #666;
+                    --sw-anchor-default-primary-color: none;
+                }
+            </style>
+            <style type="text/css">
+                #sndmap {
+                    width: 100%;
+                    height: 200px;
+                }
+            </style>
+            <div class="content-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-12">
+
+                            <div id="smartwizard" class="sw sw-theme-arrows sw-justified"
+                                style="width: 100%; margin-bottom: 1em;">
+                                <ul class="nav nav-progress">
+                                    <li class="nav-item">
+                                        <a class="nav-link default active" style="background-color: #00D179;">
+                                            <span class="num">
+                                                1
+                                            </span> Sync Forests
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link default done" style="background-color: #666;"
+                                            href="/User/UpdateCluster">
+                                            <span class="num">2</span>
+                                            Update
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link default done"
+                                            style="background-color: #F7F8F9; color: #707070;"
+                                            href="/User/ClusterApproval">
+                                            <span class="num">3</span>
+                                            Mint
+                                        </a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div><!-- /.col -->
+                        <!--<div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item active"><a href="#">Register</a></li>
+                </ol>
+            </div>-->
+                        <!-- /.col -->
+                    </div><!-- /.row -->
+                </div><!-- /.container-fluid -->
+            </div>
+
+            <section class="content">
+                <div class="container-fluid">
+
+                    <div class="row mb-3 mt-3">
+                        <div class="col-lg-6 col-6 text-right" style="padding-left:0;">
+                            <h3 id="totalLocal">0 Forests to be synced </h3>
+                        </div>
+                        <div class="col-lg-6 col-6" style="padding-right:0;">
+                            <a class="btn btn-sm btn-outline-success mr-3" href="javascript:;" id="btnSync">
+                                <i class="tio-upload-on-cloud"></i> Sync Now
+                            </a>
+
+                        </div>
+                        <div class="col-lg-7"></div>
+
+                    </div>
+
+                    <div class="card mb-3 mb-lg-5">
+                        <!-- Header -->
+                        <div class="card-header">
+                            <div class="row justify-content-between align-items-center flex-grow-1">
+
+
+                                <div class="col-auto">
+                                    <!-- Filter -->
+                                    <div class="row align-items-sm-center">
+                                        <div class="col-sm-auto">
+                                            <div class="d-flex align-items-center mr-2">
+                                                <span class="text-secondary mr-2">Status:</span>
+
+                                                <!-- Select -->
+                                                <select class="js-select2-custom js-datatable-filter custom-select-sm"
+                                                    size="1" style="opacity: 0;" data-target-column-index="7"
+                                                    data-hs-select2-options='{
+                                "minimumResultsForSearch": "Infinity",
+                                "customClass": "custom-select custom-select-sm custom-select-borderless",
+                                "dropdownAutoWidth": true,
+                                "width": true
+                              }'>
+                                                    <option value="">All</option>
+                                                    <option value="pending">Pending</option>
+                                                    <option value="synced">Synced</option>
+
+                                                </select>
+                                                <!-- End Select -->
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                    <!-- End Filter -->
+                                </div>
+
+                                <div class="col-12 col-md">
+                                    <div class="d-flex justify-content-between align-items-center">
+                                        <h5 class="card-header-title"></h5>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Header -->
+                        <!-- Table -->
+                        <div class="table-responsive datatable-custom table-striped table-hover">
+                            <table id="datatable"
+                                class="table table-borderless table-thead-bordered table-nowrap table-align-middle card-table"
+                                data-hs-datatables-options='{
+                     "columnDefs": [{
+                        "targets": [1, 4],
+                        "orderable": false
+                      }],
+                     "order": [],
+                     "info": {
+                       "totalQty": "#datatableWithPaginationInfoTotalQty"
+                     },
+                     "search": "#datatableSearch",
+                     "entries": "#datatableEntries",
+                     "pageLength": 10,
+                     "isResponsive": false,
+                     "isShowPaging": false,
+                     "pagination": "datatablePagination"
+                   }'>
+                                <thead>
+                                    <tr>
+                                        <th>Sl</th>
+                                        <th>Asset</th>
+                                        <th>Cluster Name</th>
+                                        <th>Tagged Time</th>
+                                        <th>Location</th>
+                                        <th>Planter</th>
+                                        <th>Farm</th>
+                                        <th>Status</th>
+                                        <th style="display:none">Status_Text</th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="group">
+                                        <td colspan="5">israr alam</td>
+                                    </tr>
+                                    <tr id="4" role="row" class="odd">
+                                        <td>1</td>
+                                        <td>
+                                            <div style="width:100%; border-radius: 14px;"> <img class="img-fluid"
+                                                    src="blob:https://flocardstaging.duckdns.org/80cc9010-07a4-4299-9a21-c2a5ce5c6226"
+                                                    alt="Asset image"></div>
+                                        </td>
+                                        <td>2023-08-02 16:11:03</td>
+                                        <td align="center"><a href="https://maps.google.com/?q=23.353841,85.307210"
+                                                target="_blank" title="Location" style="color:#00D179"
+                                                class="fa fa-map-marker"></a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span class="tio-upload-on-cloud tio-xl"
+                                                style="color: #00d179; border-color:#00d179;"> </span></td>
+                                        <td style="display:none">Synced</td>
+                                    </tr>
+                                    <tr id="1" role="row" class="even">
+                                        <td>4</td>
+                                        <td>
+                                            <div style="width:100%; border-radius: 14px;"> <img class="img-fluid"
+                                                    src="blob:https://flocardstaging.duckdns.org/39fa7953-6f75-4944-ab15-1b17da887f6e"
+                                                    alt="Asset image"></div>
+                                        </td>
+                                        <td>NaN-NaN-NaN NaN:NaN:NaN</td>
+                                        <td align="center"><a href="https://maps.google.com/?q=23.353474,85.307126"
+                                                target="_blank" title="Location" style="color:#00D179"
+                                                class="fa fa-map-marker"></a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span class="tio-upload-on-cloud tio-xl"
+                                                style="color: #00d179; border-color:#00d179;"> </span></td>
+                                        <td style="display:none">Synced</td>
+                                    </tr>
+                                    <tr class="group">
+                                        <td colspan="5">Md Ishrar Alam</td>
+                                    </tr>
+                                    <tr id="3" role="row" class="odd">
+                                        <td>2</td>
+                                        <td>
+                                            <div style="width:100%; border-radius: 14px;"> <img class="img-fluid"
+                                                    src="blob:https://flocardstaging.duckdns.org/9ac37208-43bd-427c-9fd4-ac23b2710f51"
+                                                    alt="Asset image"></div>
+                                        </td>
+                                        <td>2023-08-02 16:10:20</td>
+                                        <td align="center"><a href="https://maps.google.com/?q=23.353554,85.306352"
+                                                target="_blank" title="Location" style="color:#00D179"
+                                                class="fa fa-map-marker"></a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span class="tio-upload-on-cloud tio-xl"
+                                                style="color: #00d179; border-color:#00d179;"> </span></td>
+                                        <td style="display:none">Synced</td>
+                                    </tr>
+                                    <tr id="2" role="row" class="even">
+                                        <td>3</td>
+                                        <td>
+                                            <div style="width:100%; border-radius: 14px;"> <img class="img-fluid"
+                                                    src="blob:https://flocardstaging.duckdns.org/4e4f1639-8fb0-4248-bfab-6850a08c4a15"
+                                                    alt="Asset image"></div>
+                                        </td>
+                                        <td>2023-08-02 15:48:14</td>
+                                        <td align="center"><a href="https://maps.google.com/?q=23.353687,85.306520"
+                                                target="_blank" title="Location" style="color:#00D179"
+                                                class="fa fa-map-marker"></a></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td><span class="tio-upload-on-cloud tio-xl"
+                                                style="color: #00d179; border-color:#00d179;"> </span></td>
+                                        <td style="display:none">Synced</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- End Table -->
+                        <!-- Footer -->
+                        <div class="card-footer">
+                            <!-- Pagination -->
+                            <div class="row justify-content-center justify-content-sm-between align-items-sm-center">
+                                <div class="col-sm mb-2 mb-sm-0">
+                                    <div
+                                        class="d-flex justify-content-center justify-content-sm-start align-items-center">
+                                        <span class="mr-2">Showing:</span>
+
+                                        <!-- Select -->
+                                        <select id="datatableEntries" class="js-select2-custom "
+                                            data-hs-select2-options='{
+                            "minimumResultsForSearch": "Infinity",
+                            "customClass": "custom-select custom-select-sm custom-select-borderless",
+                            "dropdownAutoWidth": true,
+                            "width": true
+                          }'>
+                                            <option value="5">5</option>
+                                            <option value="10" selected>10</option>
+                                            <option value="15">15</option>
+                                            <option value="20">20</option>
+                                        </select>
+                                        <!-- End Select -->
+
+                                        <span class="text-secondary ml-2 mr-2">of</span>
+
+                                        <!-- Pagination Quantity -->
+                                        <span id="datatableWithPaginationInfoTotalQty"></span>
+                                    </div>
+                                </div>
+
+                                <div class="col-sm-auto">
+                                    <div class="d-flex justify-content-center justify-content-sm-end">
+                                        <!-- Pagination -->
+                                        <nav id="datatablePagination" aria-label="Activity pagination"></nav>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Pagination -->
+                        </div>
+                        <!-- End Footer -->
+                    </div>
+
+
+
+
+
+                </div>
+                <!-- /.container-fluid -->
+            </section>
+
+            <script>
+                var list = [];
+
+                if (navigator.geolocation) {
+
+                    navigator.geolocation.getCurrentPosition(setCurrentPosition, positionError, {
+                        enableHighAccuracy: true,
+                        timeout: 15000,
+                        maximumAge: 0
+                    });
+                }
+
+                function setCurrentPosition(position) {
+                    //console.log(position);
+                    $("#txtLat").val(position.coords.latitude);
+                    $("#txtLong").val(position.coords.longitude);
+
+                }
+
+                function positionError(error) {
+
+                    switch (error.code) {
+                        case error.PERMISSION_DENIED:
+
+                            console.error("User denied the request for Geolocation.");
+                            break;
+
+                        case error.POSITION_UNAVAILABLE:
+
+                            console.error("Location information is unavailable.");
+                            break;
+
+                        case error.TIMEOUT:
+
+                            console.error("The request to get user location timed out.");
+                            break;
+
+                        case error.UNKNOWN_ERROR:
+
+                            console.error("An unknown error occurred.");
+                            break;
+                    }
+                }
+            </script>
+
+            <script id="compactIDB" version="2.0.1">
+                /* Compact IndexedDB operations */
+
+                window.indexedDB = window.indexedDB || window.mozIndexedDB || window.webkitIndexedDB || window.msIndexedDB;
+                window.IDBTransaction = window.IDBTransaction || window.webkitIDBTransaction || window.msIDBTransaction;
+                window.IDBKeyRange = window.IDBKeyRange || window.webkitIDBKeyRange || window.msIDBKeyRange;
+
+                if (!window.indexedDB)
+                    window.alert("Your browser doesn't support a stable version of IndexedDB.")
+
+                const compactIDB = {
+
+                    setDefaultDB: function (dbName) {
+                        this.defaultDB = dbName;
+                    },
+
+                    upgradeDB: function (dbName, createList = null, deleteList = null) {
+                        return new Promise((resolve, reject) => {
+                            this.getDBversion(dbName).then(version => {
+                                var idb = indexedDB.open(dbName, version + 1);
+                                idb.onerror = (event) => reject("Error in opening IndexedDB");
+                                idb.onupgradeneeded = (event) => {
+                                    let db = event.target.result;
+                                    if (createList instanceof Object) {
+                                        if (Array.isArray(createList)) {
+                                            let tmp = {}
+                                            createList.forEach(o => tmp[o] = {})
+                                            createList = tmp
+                                        }
+                                        for (let o in createList) {
+                                            let obs = db.createObjectStore(o, createList[o].options ||
+                                                {});
+                                            if (createList[o].indexes instanceof Object)
+                                                for (let i in createList[o].indexes)
+                                                    obs.createIndex(i, i, createList[o].indexes || {});
+                                        }
+                                    }
+                                    if (Array.isArray(deleteList))
+                                        deleteList.forEach(o => db.deleteObjectStore(o));
+                                    resolve('Database upgraded')
+                                }
+                                idb.onsuccess = (event) => event.target.result.close();
+                            }).catch(error => reject(error))
+                        })
+                    },
+
+                    initDB: function (dbName, objectStores = {}) {
+                        return new Promise((resolve, reject) => {
+                            if (!(objectStores instanceof Object))
+                                return reject('ObjectStores must be an object or array')
+                            this.defaultDB = this.defaultDB || dbName;
+                            var idb = indexedDB.open(dbName);
+                            idb.onerror = (event) => reject("Error in opening IndexedDB");
+                            idb.onsuccess = (event) => {
+                                var db = event.target.result;
+                                let cList = Object.values(db.objectStoreNames);
+                                var obs = {},
+                                    a_obs = {},
+                                    d_obs = [];
+                                if (!Array.isArray(objectStores))
+                                    var obs = objectStores
+                                else
+                                    objectStores.forEach(o => obs[o] = {})
+                                let nList = Object.keys(obs)
+                                for (let o of nList)
+                                    if (!cList.includes(o))
+                                        a_obs[o] = obs[o]
+                                for (let o of cList)
+                                    if (!nList.includes(o))
+                                        d_obs.push(o)
+                                if (!Object.keys(a_obs).length && !d_obs.length)
+                                    resolve("Initiated IndexedDB");
+                                else
+                                    this.upgradeDB(dbName, a_obs, d_obs)
+                                        .then(result => resolve(result))
+                                        .catch(error => reject(error))
+                                db.close();
+                            }
+                        });
+                    },
+
+                    openDB: function (dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            var idb = indexedDB.open(dbName);
+                            idb.onerror = (event) => reject("Error in opening IndexedDB");
+                            idb.onupgradeneeded = (event) => {
+                                event.target.result.close();
+                                this.deleteDB(dbName)
+                                reject("Datebase not found")
+                            }
+                            idb.onsuccess = (event) => resolve(event.target.result);
+                        });
+                    },
+
+                    deleteDB: function (dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            var deleteReq = indexedDB.deleteDatabase(dbName);;
+                            deleteReq.onerror = (event) => reject("Error deleting database!");
+                            deleteReq.onsuccess = (event) => resolve("Database deleted successfully");
+                        });
+                    },
+
+                    getDBversion: function (dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                resolve(db.version)
+                                db.close()
+                            }).catch(error => reject(error))
+                        })
+                    },
+
+                    writeData: function (obsName, data, key = false, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readwrite").objectStore(obsName);
+                                let writeReq = (key ? obs.put(data, key) : obs.put(data));
+                                writeReq.onsuccess = (evt) => resolve(`Write data Successful`);
+                                writeReq.onerror = (evt) => reject(
+                                    `Write data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    addData: function (obsName, data, key = false, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readwrite").objectStore(obsName);
+                                let addReq = (key ? obs.add(data, key) : obs.add(data));
+                                addReq.onsuccess = (evt) => resolve(`Add data successful`);
+                                addReq.onerror = (evt) => reject(
+                                    `Add data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    removeData: function (obsName, key, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readwrite").objectStore(obsName);
+                                let delReq = obs.delete(key);
+                                delReq.onsuccess = (evt) => resolve(`Removed Data ${key}`);
+                                delReq.onerror = (evt) => reject(
+                                    `Remove data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    clearData: function (obsName, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readwrite").objectStore(obsName);
+                                let clearReq = obs.clear();
+                                clearReq.onsuccess = (evt) => resolve(`Clear data Successful`);
+                                clearReq.onerror = (evt) => reject(`Clear data Unsuccessful`);
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    readData: function (obsName, key, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readonly").objectStore(obsName);
+                                let getReq = obs.get(key);
+                                getReq.onsuccess = (evt) => resolve(evt.target.result);
+                                getReq.onerror = (evt) => reject(
+                                    `Read data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    readAllData: function (obsName, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readonly").objectStore(obsName);
+                                var tmpResult = {}
+                                let curReq = obs.openCursor();
+                                curReq.onsuccess = (evt) => {
+                                    var cursor = evt.target.result;
+                                    if (cursor) {
+                                        tmpResult[cursor.primaryKey] = cursor.value;
+                                        cursor.continue();
+                                    } else
+                                        resolve(tmpResult);
+                                }
+                                curReq.onerror = (evt) => reject(
+                                    `Read-All data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    searchData: function (obsName, options = {}, dbName = this.defaultDB) {
+                        options.lowerKey = options.atKey || options.lowerKey || 0
+                        options.upperKey = options.atKey || options.upperKey || false
+                        options.patternEval = options.patternEval || ((k, v) => {
+                            return true
+                        })
+                        options.limit = options.limit || false;
+                        options.lastOnly = options.lastOnly || false
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readonly").objectStore(obsName);
+                                var filteredResult = {}
+                                let curReq = obs.openCursor(
+                                    options.upperKey ? IDBKeyRange.bound(options.lowerKey, options.upperKey) : IDBKeyRange.lowerBound(options.lowerKey),
+                                    options.lastOnly ? "prev" : "next");
+                                curReq.onsuccess = (evt) => {
+                                    var cursor = evt.target.result;
+                                    if (cursor) {
+                                        if (options.patternEval(cursor.primaryKey, cursor.value)) {
+                                            filteredResult[cursor.primaryKey] = cursor.value;
+                                            options.lastOnly ? resolve(filteredResult) : cursor.continue();
+                                        } else
+                                            cursor.continue();
+                                    } else
+                                        resolve(filteredResult);
+                                }
+                                curReq.onerror = (evt) => reject(`Search unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`);
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+                    getMaxKey: function (obsName, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                var obs = db.transaction(obsName, "readonly").objectStore(obsName);
+                                var tmpResult = {}
+                                let curReq = obs.openCursor(null, 'prev');
+                                curReq.onsuccess = (evt) => {
+                                    var cursor = evt.target.result;
+                                    if (cursor) {
+                                        resolve(cursor.key)
+                                    } else
+                                        resolve(0);
+                                }
+                                curReq.onerror = (evt) => reject(
+                                    `Read-MaxKey data unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+                    updateFlag: function (obsName, flag, key = false, dbName = this.defaultDB) {
+                        return new Promise((resolve, reject) => {
+                            this.openDB(dbName).then(db => {
+                                debugger;
+                                var obs = db.transaction(obsName, "readwrite").objectStore(obsName);
+                                //let addReq = (key ? obs.add(data, key) : obs.add(data));
+                                const cursorRequest = obs.openCursor();
+                                cursorRequest.onsuccess = e => {
+                                    debugger;
+                                    const cursor = e.target.result;
+                                    if (cursor) {
+                                        if (cursor.key === key) {
+
+                                            const ob = cursor.value;
+                                            ob.sync_flag = flag;
+                                            const updateRequest = cursor.update(ob);
+                                        }
+                                        cursor.continue();
+                                    }
+                                }
+                                cursorRequest.onerror = (evt) => reject(
+                                    `Update Flag unsuccessful [${evt.target.error.name}] ${evt.target.error.message}`
+                                );
+                                db.close();
+                            }).catch(error => reject(error));
+                        });
+                    },
+
+
+                }
+            </script>
+
+            <script>
+                var cnt = 1;
+                var totalElementCount = 0;
+                var totalSuccessCount = 0;
+                var totalFailureCount = 0;
+                var base64data;
+                $(document).ready(function () {
+
+                    if (navigator.onLine) {
+                        if ('serviceWorker' in navigator) {
+                            caches.keys().then(function (cacheNames) {
+                                cacheNames.forEach(function (cacheName) {
+                                    caches.delete(cacheName);
+                                    console.log("Online - Cache Cleared");
+                                });
+                            });
+                        }
+                    }
+                    else {
+                        console.log("Offline - Using Cache");
+                    }
+
+                    //// INITIALIZATION OF HS-ADD-FIELD
+                    //// =======================================================
+                    //$('.js-add-field').each(function () {
+                    //    new HSAddField($(this)).init();
+                    //});
+
+                    //// INITIALIZATION OF QUANTITY COUNTER
+                    //// =======================================================
+                    //$('.js-quantity-counter').each(function () {
+                    //    var quantityCounter = new HSQuantityCounter($(this)).init();
+                    //});
+
+                    var IDBObjects = {
+                        tags: { keyPath: "id", autoIncrement: true },
+                        clusters: { keyPath: "id", autoIncrement: true }
+                    }
+                    compactIDB.initDB("Flocard", IDBObjects)
+                        .then(result => {
+                            console.log(result)
+                        }).then(() => {
+                            //totalElementCount+=1;
+                            display();
+                        })
+                        .catch(error => console.error(error))
+                });
+
+                function initDatatable() {
+                    // INITIALIZATION OF FORM SEARCH
+                    // =======================================================
+                    $('.js-form-search').each(function () {
+                        new HSFormSearch($(this)).init()
+                    });
+
+
+                    // INITIALIZATION OF SELECT2
+                    // =======================================================
+                    $('.js-select2-custom').each(function () {
+                        var select2 = $.HSCore.components.HSSelect2.init($(this));
+                    });
+
+                    // INITIALIZATION OF DATATABLES
+                    // =======================================================
+                    var datatable = $.HSCore.components.HSDatatables.init($('#datatable'), {
+                        //columnDefs: [{ visible: false, targets: 8 }],
+                        select: {
+                            style: 'multi',
+                            selector: 'td:first-child input[type="checkbox"]',
+                            classMap: {
+                                checkAll: '#datatableCheckAll',
+                                counter: '#datatableCounter',
+                                counterInfo: '#datatableCounterInfo'
+                            }
+                        },
+                        language: {
+                            zeroRecords: '<div class="text-center p-4">' +
+                                '<img class="mb-3" src="/assets/svg/illustrations/sorry.svg" alt="Image Description" style="width: 7rem; background:white;border-radius:20%;">' +
+                                '<p class="mb-0">No data to show</p>' +
+                                '</div>'
+                        }
+                    });
+
+                    $('.js-datatable-filter').on('change', function () {
+                        var $this = $(this),
+                            elVal = $this.val(),
+                            targetColumnIndex = $this.data('target-column-index');
+
+                        datatable.column(targetColumnIndex).search(elVal).draw();
+                    });
+
+                    $('#datatableSearch').on('mouseup', function (e) {
+                        var $input = $(this),
+                            oldValue = $input.val();
+
+                        if (oldValue == "") return;
+
+                        setTimeout(function () {
+                            var newValue = $input.val();
+
+                            if (newValue == "") {
+                                // Gotcha
+                                datatable.search('').draw();
+                            }
+                        }, 1);
+                    });
+                }
+
+                function removeDisableButton() {
+                    var button = $('#btnSync');
+                    $(button).removeAttr('disabled');
+                }
+
+                //function add()
+                //{
+                //    var obj = new Object();
+                //    obj["species"] = $("#ddlSpecies").val();
+                //    obj["lat"] = $("#txtLat").val();
+                //    obj["long"] = $("#txtLong").val();
+                //    obj["date"] = $("#txtDoP").val();
+                //    obj["imageVal"] = $("#txtImg").val();
+                //    console.log($("#txtImg").val());
+                //   compactIDB.getMaxKey("tags").then(resp => {
+                //       var lastKey = parseInt(resp);
+                //       lastKey = lastKey +1;
+                //       compactIDB.addData("tags",obj,lastKey).then(resp => {
+                //        display();
+                //    });
+                //   });
+                //   //obj["imageVal"] = '';
+                //}
+                function display() {
+                    compactIDB.readAllData("clusters").then(resp => {
+                        var keys = Object.keys(resp);
+                        //totalElementCount = keys;
+                        //console.log(totalElementCount);
+                        var totalLocalCnt = document.getElementById('totalLocal');
+                        var synced = 0;
+                        var pending = 0;
+
+                        var html = "";
+                        var synced = "";
+                        var sl = 1;
+                        for (var key = keys.length; key >= 1; key--) {
+                            var clr = "#00d179";
+                            var status = "Synced";
+                            if (resp[key]["sync_flag"] == "false") {
+                                pending++;
+                                clr = "red";
+                                status = "Pending";
+                            }
+                            else {
+                                synced++;
+                            }
+
+                            var file = resp[key]["img"];
+                            var url = URL.createObjectURL(file);
+
+                            var tag_ts = new Date(resp[key]["tagged_ts"]);
+
+                            tag_ts = tag_ts.getFullYear() + "-" + (((tag_ts.getMonth() + 1) < 10) ? "0" : "") + (tag_ts.getMonth() + 1) + "-" + ((tag_ts.getDate() < 10) ? "0" : "") + tag_ts.getDate() + " " + ((tag_ts.getHours() < 10) ? "0" : "") + tag_ts.getHours() + ":" + ((tag_ts.getMinutes() < 10) ? "0" : "") + tag_ts.getMinutes() + ":" + ((tag_ts.getSeconds() < 10) ? "0" : "") + tag_ts.getSeconds();
+
+
+                            html += '<tr id="' + key + '"><td>' + sl + '</td><td><div style = "width:100%; border-radius: 14px;" > <img class="img-fluid" src = ' + url + ' alt = "Asset image" ></div></td><td>' + resp[key]["cluster_name"] + '</td><td>' + tag_ts + '</td><td align="center"><a href="https://maps.google.com/?q=' + resp[key]["lat"] + ',' + resp[key]["long"] + '" target="_blank" title="Location" style="color:#00D179" class="fa fa-map-marker"></a></td><td></td><td></td><td><span class="tio-upload-on-cloud tio-xl" style = "color: ' + clr + '; border-color:' + clr + ';" > </span></td><td style="display:none">' + status + '</td></tr>';
+                            totalElementCount++;
+
+                            totalElementCount++;
+                            sl++;
+                        };
+                        //console.log(totalElementCount);
+                        $("#tblData").empty();
+                        $("#tblData").append(html);
+                        totalLocalCnt.innerHTML = pending + " Forests to be Synced";
+
+                        initDatatable();
+                    });
+                }
+
+                async function sync() {
+                    console.log("Sync Started");
+                    var primkeys = [];
+                    await compactIDB.readAllData("clusters").then(resp => {
+                        var keys = Object.keys(resp);
+
+                        //totalElementCount = keys;
+                        //console.log(totalElementCount);
+                        var html = "";
+                        for (var key of keys) {
+                            debugger;
+                            var file = resp[key]["img"];
+                            var cluster_name = resp[key]["cluster_name"];
+                            var area = resp[key]["area"];
+                            var perimeter = resp[key]["perimeter"];
+                            var lat = resp[key]["lat"];
+                            var long = resp[key]["long"];
+                            var coordinates = resp[key]["coordinates"];
+
+                            var success = false;
+                            if (file) {
+                                var formData = new FormData();
+                                formData.append('image', file);
+                                formData.append('Cluster_Name', cluster_name);
+                                formData.append('Area', area);
+                                formData.append('Perimeter', perimeter);
+                                formData.append('Latitude', lat);
+                                formData.append('Longitude', long);
+                                formData.append('Points', JSON.stringify(coordinates));
+                                $.ajax({
+                                    url: '/User/AddCluster',
+                                    type: 'POST',
+                                    async: false,
+                                    data: formData,
+                                    processData: false,
+                                    contentType: false,
+                                    success: function (response) {
+                                        //Handle success response
+                                        debugger;
+                                        if (response.status == 1) {
+                                            console.log(response);
+                                            console.log("Cluster synced with key " + key);
+                                            primkeys.push(key);
+                                            //compactIDB.removeData("clusters", parseInt(key)).then(resp => {
+                                            //    console.log(resp);
+                                            //    display();
+                                            //});
+                                            compactIDB.updateFlag("clusters", "true", parseInt(key)).then(resp => {
+                                                console.log(resp);
+                                                display();
+                                            });
+                                        }
+                                        else {
+                                            console.log(response);
+                                            console.log("Error Uploading Image for key " + key);
+                                        }
+
+                                    },
+                                    error: function (xhr, status, error) {
+                                        // Handle error response
+                                    }
+                                });
+                            }
+                            else {
+                                console.log("Sync skipped as no image for key " + key);
+                            }
+                        }
+
+                        alert("Sync Completed");
+                        location.reload(true);
+
+                    });
+
+
+
+                }
+
+
+                const syncEventListner = document.getElementById('btnSync');
+                syncEventListner.addEventListener("click", sync);
+                const IndexedDBName = "Flocard";
+                const TableName = "clusters";
+                const TagsHTMLTableID = "tags-table";
+                //const syncAPI = "/User/PushCluster";
+                const syncAPI = "/User/PushCluster";
+                const syncAPIMethod = "POST";
+                const invokeInIndexedDB = (actionFn) => {
+                    const request = window.indexedDB.open(IndexedDBName);
+                    request.onerror = (e) => {
+                        console.log("IndexedDB error: ", e);
+                        //alert("Something went wrong with local database. Open console for details.");
+                    };
+                    request.onsuccess = ({ target }) => {
+                        const { result: db } = target
+                        actionFn(db);
+                    };
+                }
+                const invokeForTagsRow = (actionFn) => (db) => {
+                    const transaction = db.transaction(TableName);
+                    const objectStore = transaction.objectStore(TableName);
+                    objectStore.openCursor().onsuccess = ({ target }) => {
+                        const { result: cursor } = target;
+                        const { primaryKey, value } = cursor || {};
+                        if (cursor) {
+                            actionFn({ db, primaryKey, value });
+                            cursor.continue();
+                        }
+                    }
+                }
+                const removeDBTagRow = ({ onSuccessCallback, onErrorCallback }) => ({ db, ...metaData }) => {
+                    const { primaryKey } = metaData;
+                    const transaction = db.transaction([TableName], "readwrite");
+                    const objectStore = transaction.objectStore(TableName);
+                    const request = objectStore.delete(primaryKey);
+                    request.onsuccess = () => onSuccessCallback(metaData);
+                    request.onerror = () => onErrorCallback(metaData);
+                }
+
+                const removeHTMLTagRow = (metaData) => {
+                    const { primaryKey, requestPayload: { ddlSpecies } } = metaData;
+                    const rowID = ddlSpecies + primaryKey;
+                    const tableHTML = document.getElementById(TagsHTMLTableID);
+                    const rowHTML = document.getElementById(rowID);
+                    totalSuccessCount++;
+                    if (tableHTML && rowHTML) tableHTML.deleteRow(rowHTML.rowIndex);
+                    const isTableEmpty = tableHTML.getElementsByTagName('tr').length === 1;
+                    if (isTableEmpty) { promtCompletion(); };
+                    return metaData;
+                }
+
+                function promtCompletion() {
+                    setTimeout(300);
+                    if (totalElementCount == totalSuccessCount) {
+
+                        $("#displayProgressPercentage").hide();
+
+                        var goToOfflineData = document.getElementById("offlineData");
+                        var goToEditAsset = document.getElementById("gotToEditAsset");
+                        var retVal = confirm("All " + totalElementCount + " items have been synced.");
+                        location.reload(true);
+                        //if (retVal == true) {
+                        //    goToEditAsset.click();
+                        //}
+                        //else {
+                        //    goToOfflineData.click();
+                        //}
+                    }
+                    else if (totalElementCount == totalFailureCount) {
+                        //alert("Items could not be synced, try again with better internet connection.");
+
+                        $("#displayProgressPercentage").hide();
+
+                        var goToOfflineData = document.getElementById("offlineData");
+                        var goToEditAsset = document.getElementById("gotToEditAsset");
+                        var retVal = confirm("Items could not be synced, try again with better internet connection.");
+                        location.reload(true);
+                        //if (retVal == true) {
+                        //    goToEditAsset.click();
+                        //}
+                        //else {
+                        //    goToOfflineData.click();
+                        //}
+                    }
+                    else if (totalElementCount == (totalFailureCount + totalSuccessCount)) {
+                        //alert("Total items synced:" +totalSuccessCount+ ". Total failed item:" +totalFailureCount);
+
+                        $("#displayProgressPercentage").hide();
+
+                        var goToOfflineData = document.getElementById("offlineData");
+                        var goToEditAsset = document.getElementById("gotToEditAsset");
+                        var retVal = confirm("Total items synced:" + totalSuccessCount + ". Total failed item:" + totalFailureCount);
+                        location.reload(true);
+                        //if (retVal == true) {
+                        //    goToEditAsset.click();
+                        //}
+                        //else {
+                        //    goToOfflineData.click();
+                        //}
+                    }
+
+                }
+
+
+
+                const applyFns = fns => x => fns.reduce((resp, fn) => resp ? fn(resp) : undefined, x);
+                const prepareTagData = ({ value, ...rest }) => {
+                    const { species: ddlSpecies, otherName: txtOther, lat: txtLat, long: txtLong, date: txtDoP, imageVal: txtImg } = value;
+                    return { ...rest, payload: { ddlSpecies, txtOther, txtLat, txtLong, txtImg, txtDoP } };
+                }
+
+                const validateTagData = (preppedData) => {
+                    const { payload } = preppedData;
+                    const { txtLat, txtLong, txtImg } = payload;
+                    if (!txtLat || !txtLong || !txtImg) {
+                        alert("Latitude/Longitude/Image is missing/incorrect.");
+                        //$("#spinnerID").hide();
+                        $("#displayProgressPercentage").hide();
+                        return undefined;
+                    }
+                    return preppedData;
+                }
+
+                const createFormData = (data) => {
+                    const { payload, ...rest } = data;
+                    const formData = new FormData();
+                    Object.keys(payload).forEach(key => formData.append(key, payload[key]))
+                    return { ...rest, formData };
+                }
+
+                const pushTagData = ({ onSuccessCallback, onFailureCallback }) => ({ formData, ...rest }) => {
+                    const request = new XMLHttpRequest();
+                    request.open(syncAPIMethod, syncAPI);
+                    request.onreadystatechange = ({ target }) => {
+                        const { readyState, status } = target;
+                        //console.log(target);
+                        const details = { ...rest, requestPayload: Object.fromEntries(formData), response: target };
+                        if (readyState === XMLHttpRequest.DONE) {
+                            switch (status) {
+                                case 200: progressPercentage(); onSuccessCallback(details); break;
+                                default: return (onFailureCallback(details));
+                            }
+                        }
+                    }
+                    const maybePromise = request.send(formData)
+                    if (maybePromise) maybePromise.then(removeDisableButton).catch(removeDisableButton);
+                }
+
+
+
+                const handleLocalUpdateFailure = e => {
+                    totalFailureCount++;
+                    //alert("Local Update Error Occured. Open console to for details");
+                    promtCompletion();
+                    console.log("Local Update Error for the following meta: ", e);
+                    //$("#displayProgressPercentage").hide();
+                    return e;
+                }
+
+                const handleSyncSuccess = removeDBTagRow({ onSuccessCallback: removeHTMLTagRow, onFailureCallback: handleLocalUpdateFailure })
+                const handleSyncFailure = e => {
+                    totalFailureCount++;
+                    promtCompletion();
+                    //alert("Sync Error Occured. Open console to for details");
+                    console.log("Sync Error for the following meta: ", e);
+                    $("#displayProgressPercentage").hide();
+                    return e;
+                }
+
+                function progressPercentage() {
+                    console.log(totalElementCount);
+                    debugger;
+                    var percent = (totalSuccessCount / totalElementCount) * 100;
+                    if (percent == 0) {
+                        percent = 1;
+                    }
+                    var displayPercent = 100 - percent;
+                    console.log(percent);
+                    document.getElementById('progressBarPercentage').style.width = displayPercent + '%';
+                }
+
+                async function SyncDataBase() {
+                    let tableBody = document.getElementById("tblData")
+                    if (tableBody.rows.length === 0) {
+                        alert("No data to Sync")
+                    } else {
+                        //var element = document.getElementById('spinnerID');
+                        var element = document.getElementById('displayProgressPercentage');
+                        debugger;
+                        var button = $('#btnSync');
+                        $(button).attr('disabled', 'disabled');
+                        element.style.removeProperty("visibility");
+                        const postTagData = pushTagData({ onSuccessCallback: handleSyncSuccess, onFailureCallback: handleSyncFailure });
+                        const actions = [prepareTagData, validateTagData, createFormData, postTagData];
+                        const publishTag = applyFns(actions);
+                        invokeInIndexedDB(invokeForTagsRow(publishTag));
+                    }
+                    //$(button).removeAttr('disabled');
+                }
+
+                function goToEditPageBtn() {
+                    var url = '/User/SyncCluster';
+                    window.location.href = url;
+                }
+
+            </script>
+
+
+        </div>
+        <!-- End Content -->
+        <!-- Footer -->
+
+        <div class="footer">
+            <div class="row justify-content-between align-items-center">
+            </div>
+        </div>
+
+
+
+        <!-- End Footer -->
+        <script>
+            var groupColumn = 2;
+            var table = $('#datatable').DataTable({
+                columnDefs: [{ visible: false, targets: groupColumn }],
+                order: [[groupColumn, 'asc']],
+                displayLength: 25,
+                drawCallback: function (settings) {
+                    var api = this.api();
+                    var rows = api.rows({ page: 'current' }).nodes();
+                    var last = null;
+
+                    api.column(groupColumn, { page: 'current' })
+                        .data()
+                        .each(function (group, i) {
+                            if (last !== group) {
+                                $(rows)
+                                    .eq(i)
+                                    .before(
+                                        '<tr class="group"><td colspan="8">' +
+                                        group +
+                                        '</td></tr>'
+                                    );
+
+                                last = group;
+                            }
+                        });
+                }
+            });
+
+            // Order by the grouping
+            $('#datatable tbody').on('click', 'tr.group', function () {
+                var currentOrder = table.order()[0];
+                if (currentOrder[0] === groupColumn && currentOrder[1] === 'asc') {
+                    table.order([groupColumn, 'desc']).draw();
+                }
+                else {
+                    table.order([groupColumn, 'asc']).draw();
+                }
+            });
+        </script>
+    </main>
+    <!-- ========== END MAIN CONTENT ========== -->
+    <!-- JS Global Compulsory  -->
+
+    <script src="/assets/vendor/jquery-migrate/dist/jquery-migrate.min.js"></script>
+    <script src="/assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- JS Implementing Plugins -->
+    <script src="/assets/vendor/hs-navbar-vertical-aside/hs-navbar-vertical-aside.min.js"></script>
+    <script src="/assets/vendor/hs-unfold/dist/hs-unfold.min.js"></script>
+    <script src="/assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+    <script src="/assets/vendor/select2/dist/js/select2.full.min.js"></script>
+    <script src="/assets/vendor/chart.js/dist/Chart.min.js"></script>
+    <script src="/assets/vendor/chart.js.extensions/chartjs-extensions.js"></script>
+    <script src="/assets/vendor/chartjs-plugin-datalabels/dist/chartjs-plugin-datalabels.min.js"></script>
+    <script src="/assets/vendor/daterangepicker/moment.min.js"></script>
+    <script src="/assets/vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="/assets/vendor/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="/assets/vendor/datatables.net.extensions/select/select.min.js"></script>
+    <script src="/assets/vendor/clipboard/dist/clipboard.min.js"></script>
+    <script src="/assets/vendor/hs-file-attach/dist/hs-file-attach.min.js"></script>
+    <script src="/assets/vendor/hs-scrollspy/dist/hs-scrollspy.min.js"></script>
+    <script src="/assets/vendor/hs-sticky-block/dist/hs-sticky-block.js"></script>
+    <script src="/assets/js/tagify.min.js"></script>
+    <!-- JS Front -->
+    <script src="/assets/js/theme.min.js"></script>
+    <script type="text/javascript" src="/js/html2canvas.js"></script>
+    <script type="text/javascript" src="/assets/js/hs.tagify.js"></script>
+    <!-- Step Forms -->
+    <script src="/assets/vendor/hs-step-form/dist/hs-step-form.min.js"></script>
+    <!-- Search Form -->
+    <script src="/assets/vendor/hs-form-search/dist/hs-form-search.min.js"></script>
+    <!-- Script For Checkbox Bootstrap-->
+    <script src="https://unpkg.com/bootstrap-table@1.19.1/dist/bootstrap-table.min.js"></script>
+
+    <!-- Autocomplete search bootstrap-->
+    <script src="/js/bootstrap-autocomplete.min.js"></script>
+    <script src="/assets/vendor/hs-add-field/dist/hs-add-field.min.js"></script>
+    <script src="/assets/vendor/hs-quantity-counter/dist/hs-quantity-counter.min.js"></script>
+    <!-- JS Plugins Init. -->
+    <script>
+        $(document).on('ready', function () {
+
+            $("#lnkFloCard").on('click', function (event) {
+                var url = "/User/FlocardSignin/";
+
+                $.get(url, function (resp) {
+                    if (resp.status == 1) {
+                        window.location.href = resp.redirect_uri;
+                    }
+                    else {
+                        alert("Error Redirecting to FloCard.");
+                        console.log("FloCard Redirection Error : " + resp.message);
+                    }
+                });
+
+            });
+
+
+
+
+            // INITIALIZATION OF TAGIFY
+            // =======================================================
+
+            $('.js-tagify').each(function () {
+                var tagify = $.HSCore.components.HSTagify.init($(this));
+            });
+
+            // BUILDER TOGGLE INVOKER
+            // =======================================================
+            $('.js-navbar-vertical-aside-toggle-invoker').click(function () {
+                $('.js-navbar-vertical-aside-toggle-invoker i').tooltip('hide');
+            });
+
+
+            // INITIALIZATION OF NAVBAR VERTICAL NAVIGATION
+            // =======================================================
+            var sidebar = $('.js-navbar-vertical-aside').hsSideNav();
+
+
+            // INITIALIZATION OF TOOLTIP IN NAVBAR VERTICAL MENU
+            // =======================================================
+            $('.js-nav-tooltip-link').tooltip({ boundary: 'window' })
+
+            $(".js-nav-tooltip-link").on("show.bs.tooltip", function (e) {
+                if (!$("body").hasClass("navbar-vertical-aside-mini-mode")) {
+                    return false;
+                }
+            });
+
+
+            // INITIALIZATION OF UNFOLD
+            // =======================================================
+            $('.js-hs-unfold-invoker').each(function () {
+                var unfold = new HSUnfold($(this)).init();
+            });
+
+
+            // INITIALIZATION OF FORM SEARCH
+            // =======================================================
+            //$('.js-form-search').each(function () {
+            //    new HSFormSearch($(this)).init()
+            //});
+
+
+            // INITIALIZATION OF SELECT2
+            // =======================================================
+            //$('.js-select2-custom').each(function () {
+            //    var select2 = $.HSCore.components.HSSelect2.init($(this));
+            //});
+
+
+            // INITIALIZATION OF CHARTJS
+            // =======================================================
+
+
+            // INITIALIZATION OF DATERANGEPICKER
+            // =======================================================
+            $('.js-daterangepicker').daterangepicker();
+
+            $('.js-daterangepicker-times').daterangepicker({
+                timePicker: true,
+                startDate: moment().startOf('hour'),
+                endDate: moment().startOf('hour').add(32, 'hour'),
+                locale: {
+                    format: 'M/DD hh:mm A'
+                }
+            });
+
+            var start = moment();
+            var end = moment();
+
+            function cb(start, end) {
+                $('#js-daterangepicker-predefined .js-daterangepicker-predefined-preview').html(start.format('MMM D') + ' - ' + end.format('MMM D, YYYY'));
+            }
+
+            $('#js-daterangepicker-predefined').daterangepicker({
+                startDate: start,
+                endDate: end,
+                ranges: {
+                    'Today': [moment(), moment()],
+                    'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+                    'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+                    'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+                    'This Month': [moment().startOf('month'), moment().endOf('month')],
+                    'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+                }
+            }, cb);
+
+            cb(start, end);
+
+            // INITIALIZATION OF CLIPBOARD
+            // =======================================================
+            $('.js-clipboard').each(function () {
+                var clipboard = $.HSCore.components.HSClipboard.init(this);
+            });
+
+            //Scrollspy
+
+            var scrollspy = new HSScrollspy($('body'), {
+                // !SETTING "resolve" PARAMETER AND RETURNING "resolve('completed')" IS REQUIRED
+                beforeScroll: function (resolve) {
+                    if (window.innerWidth < 992) {
+                        $('#navbarVerticalNavMenu').collapse('hide').on('hidden.bs.collapse', function () {
+                            return resolve('completed');
+                        });
+                    } else {
+                        return resolve('completed');
+                    }
+                }
+            }).init();
+
+            // INITIALIZATION OF STICKY BLOCKS
+            // =======================================================
+            $('.js-sticky-block').each(function () {
+                var stickyBlock = new HSStickyBlock($(this)).init();
+            });
+
+
+            // INITIALIZATION OF SCROLLSPY
+            // =======================================================
+            var scrollspy = new HSScrollspy($('body'), {
+                // !SETTING "resolve" PARAMETER AND RETURNING "resolve('completed')" IS REQUIRED
+                beforeScroll: function (resolve) {
+                    if (window.innerWidth < 992) {
+                        $('#navbarVerticalNavMenu').collapse('hide').on('hidden.bs.collapse', function () {
+                            return resolve('completed');
+                        });
+                    } else {
+                        return resolve('completed');
+                    }
+                }
+            }).init();
+
+
+
+            // INITIALIZATION OF FORM SEARCH
+            // =======================================================
+            //$('.js-form-search').each(function () {
+            //    new HSFormSearch($(this)).init()
+            //});
+
+
+
+            $('.basicAutoComplete').autoComplete({
+                resolverSettings: {
+                    url: '/User/SearchAlias'
+                },
+                minLength: 1
+            });
+
+            // INITIALIZATION OF ION RANGE SLIDER
+            // =======================================================
+            //$('.js-ion-range-slider').each(function () {
+            //  $.HSCore.components.HSIonRangeSlider.init($(this));
+            //});
+
+        });
+    </script>
+
+
+
+    <!-- IE Support -->
+    <script>
+        if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) document.write('<script src="~/assets/vendor/babel-polyfill/polyfill.min.js"><\/script>');
+    </script>
+
+    <!-- Enable Service Worker -->
+    <script>
+        //if ('serviceWorker' in navigator) {
+        //    navigator.serviceWorker.register("/sw.js",{scope : "/User/"}).then(reg => {
+        //    //navigator.serviceWorker.register("/sw.js", { scope: "/User/" }).then(reg => {
+        //        console.log("SW registered with scope : " + reg.scope);
+        //    });
+        //}
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/sw.js', { scope: '/User/' })
+                    //navigator.serviceWorker.register('/sw.js',{scope : '/User/')
+                    .then(registration => {
+                        console.log('Service worker registered: ', registration);
+                    })
+                    .catch(registrationError => {
+                        console.log('Service worker registration failed: ', registrationError);
+                    });
+            });
+        }
+
+    </script>
+
+</body>
+
+</html>
